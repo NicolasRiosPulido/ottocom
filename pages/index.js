@@ -26,7 +26,7 @@ export default function Home(props) {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="amphtml" href="/amp" />
+        <link rel="amphtml" href="https://testottodotcom.vercel.app/amp" />
       </Head>
       <main className={styles.main}>
         <Image
