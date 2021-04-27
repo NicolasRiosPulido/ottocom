@@ -37,7 +37,7 @@ export default function Home(props) {
         />
         <h1>Otto.com</h1>
         <Link href="/test_page">
-          <a>test link next.js</a>
+          <a>Pasarela de pago</a>
         </Link>
         <h2>{data.results[0].name}</h2>
       </main>
