@@ -38,6 +38,7 @@ export default function Home(props) {
         <Link href="/test_page">
           <a>test link next.js</a>
         </Link>
+        <h2>{data.results[0].name}</h2>
       </main>
     </div>
   )
