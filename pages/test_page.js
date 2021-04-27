@@ -4,7 +4,7 @@ const TestPage = () => {
     return (
         <>
             <Head>
-                <title>Otro titulop</title>
+                <title>Pasarela de pago</title>
             </Head>
             <h1>hola mundo</h1>
         </>
