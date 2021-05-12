@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-const TestPage = () => {
+const PasareladePagos = () => {
     return (
         <>
             <Head>
@@ -11,4 +11,4 @@ const TestPage = () => {
     )
 }
 
-export default TestPage;
+export default PasareladePagos;

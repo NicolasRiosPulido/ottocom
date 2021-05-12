@@ -1,0 +1,24 @@
+/*Cuerpo*/
+.cuerpo{
+   display: grid;
+   grid-template-rows: 100px 1fr 150px;
+   min-height: 100vh;
+}
+
+/*Header*/
+.headreContainer{
+   border: 1px solid;
+   display: flex;
+   align-items: center;
+   padding: 0px 20px;
+   justify-content: space-between;
+}
+.iconContainer{
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+/*Footer*/
+.footerContainer{
+    border: 1px solid;
+}

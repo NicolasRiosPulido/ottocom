@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../src/styles/Home.module.css'
+
+import Layout from '../src/components/layout'
 
 export const getStaticProps = async (context) => {
   const res = await fetch('https://rickandmortyapi.com/api/location')
@@ -19,28 +21,25 @@ export const getStaticProps = async (context) => {
 }
 
 export default function Home(props) {
-  const { data } = props
-  console.log('respuestas test', data)
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Otto App</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="amphtml" href="https://testottodotcom.vercel.app/amp" />
-      </Head>
-      <main className={styles.main}>
+    <Layout>
+      <div className={styles.container}>
+        <Head>
+          <title>Otto App</title>
+          <link rel="icon" href="/favicon.ico" />
+          <link rel="amphtml" href="https://testottodotcom.vercel.app/amp" />
+        </Head>
         <Image
           src="/images/180.png"
           height={144}
           width={144}
           alt="Your Name"
         />
-        <h1>Otto.com</h1>
-        <Link href="/test_page">
+        <h1 >Otto.com</h1>
+        <Link href="/tienda">
           <a>Pasarela de pago</a>
         </Link>
-        <h2>{data.results[0].name}</h2>
-      </main>
-    </div>
+      </div>
+    </Layout>
   )
 }
