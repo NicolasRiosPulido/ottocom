@@ -28,7 +28,24 @@ const login = (props) => {
                 <input type="pasword" defaultValue="admin" />
                 <br />
                 <input type="submit" onClick={handleSubmit} />
-                <AppleLogin clientId="ottowebauth" redirectURI="https://otto-app.com" />
+                <AppleLogin
+                    clientId="ottowebauth"
+                    redirectURI={"https://otto-app.com"}
+                    responseType={"code"}
+                    responseMode={"query"}
+                    usePopup={false}
+                    designProp={
+                        {
+                            height: 30,
+                            width: 140,
+                            color: "black",
+                            border: false,
+                            type: "sign-in",
+                            border_radius: 15,
+                            scale: 1,
+                            locale: "en_US",
+                        }
+                    } />
             </div>
         </div>
     )
