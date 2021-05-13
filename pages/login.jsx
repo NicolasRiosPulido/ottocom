@@ -30,7 +30,7 @@ const login = (props) => {
                 <input type="submit" onClick={handleSubmit} />
                 <AppleLogin
                     clientId="ottowebauth"
-                    redirectURI={"https://otto-app.com"}
+                    redirectURI={"https://otto-app.com/"}
                     responseType={"code"}
                     responseMode={"query"}
                     usePopup={false}
