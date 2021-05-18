@@ -5,12 +5,10 @@ import { Cookies } from 'react-cookie';
 
 const cookies = new Cookies();
 
-const Header = (props) => {
-    const { auth = true } = props
+const Header = () => {
     const [islogIn, setLogIn] = useState(false)
     useEffect(() => {
         const token = cookies.get('token')
-        console.log(token)
         if (token !== undefined) {
             setLogIn(true)
         } else {
@@ -21,7 +19,7 @@ const Header = (props) => {
         <div className={styles.headreContainer}>
             <h1>Este es el header</h1>
             <div className={styles.iconContainer}>
-                {auth ? islogIn ?
+                {islogIn ?
                     <Link href="/perfil">
                         <span style={{ fontSize: 30, cursor: 'pointer' }}>
                             <i className="fas fa-user"></i>
@@ -31,8 +29,7 @@ const Header = (props) => {
                         <span style={{ fontSize: 30, cursor: 'pointer' }}>
                             <i className="fas fa-sign-in-alt"></i>
                         </span>
-                    </Link>
-                    : null}
+                    </Link>}
                 <Link href="/tienda">
                     <span style={{ fontSize: 28, cursor: 'pointer' }}>
                         <i className="fas fa-cart-arrow-down"></i>

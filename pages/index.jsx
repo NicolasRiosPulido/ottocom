@@ -28,6 +28,7 @@ export default function Home(props) {
           <title>Otto App</title>
           <link rel="icon" href="/favicon.ico" />
           <link rel="amphtml" href="https://testottodotcom.vercel.app/amp" />
+
         </Head>
         <Image
           src="/images/180.png"

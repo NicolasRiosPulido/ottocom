@@ -1,6 +1,7 @@
 export const handleAuth = async (ctx) => {
-    const { req: { headers: { cookie } = {} } = {} } = ctx
-    if (!cookie) {
+    const { req: { headers: { cookie = '' } = {} } = {} } = ctx
+    const auth = cookie.includes('token')
+    if (!auth) {
         return {
             redirect: {
                 destination: '/login',
@@ -9,13 +10,16 @@ export const handleAuth = async (ctx) => {
         }
     }
     return {
-        props: {},
+        props: {
+            esta: cookie
+        },
     }
 }
 
 export const handleAuthLogIn = async (ctx) => {
-    const { req: { headers: { cookie } = {} } = {} } = ctx
-    if (cookie) {
+    const { req: { headers: { cookie = '' } = {} } = {} } = ctx
+    const auth = cookie.includes('token')
+    if (auth) {
         return {
             redirect: {
                 destination: '/',

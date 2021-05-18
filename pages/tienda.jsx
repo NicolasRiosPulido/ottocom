@@ -6,7 +6,7 @@ const PasareladePagos = () => {
             <Head>
                 <title>Pasarela de pago</title>
             </Head>
-            <h1>hola mundo</h1>
+            <h1>Store</h1>
         </>
     )
 }
