@@ -6,7 +6,7 @@ const {
 } = require("url");
 const next = require("next");
 
-const port = 3001;
+const port = process.env.PORT || 3000;
 
 // Create the Express-Next App
 const app = next({
