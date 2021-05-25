@@ -7,17 +7,7 @@
 .containerLogin{
  display: flex;
  flex-direction: column;
+ width: 375px;
 }
 
-.btnFacebook { 
-    width: 165px;
-    height:35px;  
-    border-radius: 4px;
-    background: #3b5998;
-    color:white;
-    border:0px transparent;  
-    text-align: center;
-    margin:5px;
-    display: inline-block;
-  }
   

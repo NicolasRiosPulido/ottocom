@@ -28,7 +28,6 @@ export default function Home(props) {
           <title>Otto App</title>
           <link rel="icon" href="/favicon.ico" />
           <link rel="amphtml" href="https://testottodotcom.vercel.app/amp" />
-
         </Head>
         <Image
           src="/images/180.png"
@@ -37,9 +36,6 @@ export default function Home(props) {
           alt="Your Name"
         />
         <h1 >Otto.com</h1>
-        <Link href="/tienda">
-          <a>Pasarela de pago</a>
-        </Link>
       </div>
     </Layout>
   )

@@ -91,13 +91,9 @@ const login = (props) => {
                     scope={"name email"}
                     responseMode={"form_post"}
                     usePopup={false}
-                    designProp={{
-                        height: 40,
-                        width: 375,
-                        locale: 'es_ES',
-                        border_radius: 50,
-                        type: 'continue'
-                    }}
+                    render={(renderProps) => (
+                        <button onClick={renderProps.onClick} disabled={cargando}>Continuar con Apple</button>
+                    )}
                 />
                 <FacebookLogin
                     appId="517418439418746"
