@@ -28,16 +28,26 @@ h1, h2, h3, h4, h5, h6, p{
 :root {
   --main-bodey-width: 1410px;
 }
-
+.secction_body{
+  width: var(--main-bodey-width);
+  margin: 0px auto;
+}
 .row{
   display: flex;
   justify-content: space-between;
+}
+.row_line{
+  display: flex;
 }
 .row_center{
   display: flex;
   justify-content: center;
 }
-
+.c_t{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*Boton de facebook*/
 .kep-login-facebook.metro {
   background: blue;

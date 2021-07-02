@@ -4,6 +4,7 @@ import Layout from '../src/components/layout';
 import OpenHome from '../src/components/home/OpenHome';
 import ComoFunciona from '../src/components/home/ComoFunciona';
 import Subscripciones from '../src/components/home/Subscripciones';
+import Instrucciones from '../src/components/home/Instrucciones';
 
 export default function Home(props) {
   return (
@@ -17,6 +18,7 @@ export default function Home(props) {
         <OpenHome />
         <ComoFunciona />
         <Subscripciones />
+        <Instrucciones />
       </div>
     </Layout>
   )
