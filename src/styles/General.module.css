@@ -1,3 +1,4 @@
+/*Input*/
 .container{
     display: flex;
     flex-direction: column;
@@ -11,3 +12,29 @@
 .inputStile{
 
 }
+
+/*Btn*/
+
+.btnContainer{
+    width: 200px;
+    height: 56px;
+    border-radius: 40px;
+    background: #58CB98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+ .btnContainer p{
+    color: #F7F7FC;
+    font-weight: 700;
+    font-size: 16px;
+ }
+
+ /* LinksApps */
+
+ .LinksApps{
+     width: 310px;
+     display: flex;
+     justify-content: space-around;
+ }

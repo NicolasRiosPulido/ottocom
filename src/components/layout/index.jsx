@@ -11,9 +11,7 @@ const Layout = (props) => {
                 <script src="https://kit.fontawesome.com/4d421b6c38.js" crossOrigin="anonymous"></script>
             </Head>
             <Header />
-            <div>
-                {children}
-            </div>
+            {children}
             <Footer />
         </div>
     )

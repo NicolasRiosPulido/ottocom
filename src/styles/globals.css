@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 html,
 body {
   padding: 0;
@@ -13,7 +13,7 @@ a {
 
 * {
   box-sizing: border-box;
-}
+} 
 h1, h2, h3, h4, h5, h6, p{
   margin: 0;
 	padding: 0;
@@ -22,8 +22,20 @@ h1, h2, h3, h4, h5, h6, p{
 	font-weight: inherit;
 	font-style: inherit;
 	font-size: 100%;
-	font-family: inherit;
-	vertical-align: baseline;
+  vertical-align: baseline;
+}
+
+:root {
+  --main-bodey-width: 1410px;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+.row_center{
+  display: flex;
+  justify-content: center;
 }
 
 /*Boton de facebook*/

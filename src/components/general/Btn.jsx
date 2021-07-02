@@ -1,8 +1,9 @@
+import styles from '../../styles/General.module.css';
 
 const Btn = () => {
     return (
-        <div>
-
+        <div className={styles.btnContainer}>
+            <p>Button</p>
         </div>
     )
 }
