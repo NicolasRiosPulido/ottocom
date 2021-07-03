@@ -6,11 +6,13 @@
     height: 57px;
 }
 
-.titulo{
-    
-}
-.inputStile{
+/* Brand */
 
+.brandTitle{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 22px;
+    margin-left: 14px;
 }
 
 /*Btn*/
@@ -36,5 +38,5 @@
  .LinksApps{
      width: 310px;
      display: flex;
-     justify-content: space-around;
+     justify-content: space-between;
  }

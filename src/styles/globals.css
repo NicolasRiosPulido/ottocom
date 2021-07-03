@@ -39,6 +39,10 @@ h1, h2, h3, h4, h5, h6, p{
 .row_line{
   display: flex;
 }
+.row_aling{
+  display: flex;
+  align-items: center;
+}
 .row_center{
   display: flex;
   justify-content: center;
@@ -48,6 +52,7 @@ h1, h2, h3, h4, h5, h6, p{
   justify-content: center;
   align-items: center;
 }
+
 /*Boton de facebook*/
 .kep-login-facebook.metro {
   background: blue;

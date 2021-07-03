@@ -37,21 +37,28 @@
 .OpenBody{
   display: flex;
   width: var(--main-bodey-width);
-  height: 80%;
+  height: 65%;
 }
 .homeImgContainer{
   position: relative;
-  width: 480px;
+  width: 400px;
+margin-right: 90px;
 }
-
 .cellPhoneA{
   position: absolute;
+  width: 100%;
+  height: 90%;
   top: 0px;
-  left: 120px;
+  left: 35px;
+  z-index: 2;
 }
 .cellPhoneB{
   position: absolute;
-  top: 50px;
+  width: 100%;
+  height: 90%;
+  top: 72px;
+  left: -80px;
+  z-index: 1;
 }
 
 .OpenTextContainer{
@@ -114,7 +121,7 @@
 /* Subscripciones */
 .Subscripciones{
   margin-top: 75px;
-  margin-bottom: 50px;
+  margin-bottom: 160px;
 }
 .planBasico{
   background: #F1ECFF;
@@ -153,16 +160,96 @@
   height: 100vh;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  margin-bottom: 100px;
 }
 .InstruccionesCard{
   width: 420px;
   height: 252px;
   box-shadow: 0px 0px 10px #F1ECFF;
   border-radius: 15px;
+  padding: 40px;
+}
+.InstruccionesCard p:nth-child(2){
+  size: 24px;
+  color: #1C1F28;
+  margin: 20px 0px; 
+}
+.InstruccionesCard p:nth-child(3){
+  color: #7A7C82;
+  font-size: 18px;
 }
 .iconContainer{
   background: #6728FF;
   height: 60px;
   width: 60px;
   border-radius: 50%;
+}
+.instructionPhine{
+  margin: 0px 40px 100px;
+}
+
+/* News Letter */
+
+.NewsLetter{
+  height: 206px;
+  background: linear-gradient(114.44deg, #624AF2 0%, #50DDC3 100%);
+  border-radius: 50px;
+  position: relative;
+  margin: 500px 0px 190px;
+  padding: 28px 68px;
+}
+.NewsLetter h3{
+  color: #FFF;
+  font-size: 32px;
+  line-height: 62px;
+  margin-bottom: 13px; 
+}
+.newsLetterImg{
+  position: absolute;
+  right: 178px;
+  top: -335px;
+}
+ .inputNewsLetter{
+  background-color: #EFF0F6;
+  height: 56px;
+  width: 325px;
+  border-radius: 16px;
+  border: none;
+  margin-right: 25px;
+  color: #ACB5BD;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0px 16px;
+}
+
+/* Security */
+
+.Security{
+display: flex;
+justify-content: space-evenly;
+margin: 61px 0px 0px;
+}
+.securityCard{
+  width: 298px;
+  height: 386px;
+  border: 1px solid #ECECEC;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.securityCardImg{
+  width: 100%;
+  height: 177px;
+  background-color: #F7F7F7;
+}
+.securityCard p:nth-child(2){
+  color: #2D2D2D;
+  font-size: 22px;
+  font-family: 700;
+  margin: 14px 24px;
+}
+.securityCard p:nth-child(3){
+  color: #2D2D2D;
+  margin: 0px 24px;
+  font-size: 14px;
+  line-height: 22px;
 }

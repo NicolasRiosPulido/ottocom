@@ -3,6 +3,9 @@ import Link from 'next/link';
 import styles from '../../styles/Layout.module.css';
 import { Cookies } from 'react-cookie';
 
+import Btn from '../general/Btn';
+import Brand from '../general/Brand';
+
 const cookies = new Cookies();
 
 const Header = () => {
@@ -16,24 +19,21 @@ const Header = () => {
         }
     }, [])
     return (
-        <div className={styles.headreContainer}>
-            <h1>Este es el header</h1>
-            <div className={styles.iconContainer}>
+        <div className={`secction_body row_line ${styles.headreContainer}`}>
+            <Brand main={true} />
+            <div className="row_aling">
+                <p>Preguntas Frecuentes</p>
                 {islogIn ?
                     <Link href="/perfil">
-                        <span style={{ fontSize: 30, cursor: 'pointer' }}>
-                            <i className="fas fa-user"></i>
-                        </span>
+                        <p>Cerrar sesion</p>
                     </Link> :
                     <Link href="/login">
-                        <span style={{ fontSize: 30, cursor: 'pointer' }}>
-                            <i className="fas fa-sign-in-alt"></i>
-                        </span>
+                        <p>Iniciar sesion</p>
                     </Link>}
                 <Link href="/tienda">
-                    <span style={{ fontSize: 28, cursor: 'pointer' }}>
-                        <i className="fas fa-cart-arrow-down"></i>
-                    </span>
+                    <Btn
+                        Title="Subscribete"
+                    />
                 </Link>
             </div>
         </div>
