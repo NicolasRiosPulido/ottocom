@@ -72,3 +72,23 @@
 .footerGeneralBrand{
     height: 50px;
 }
+/* Responsibe */
+
+@media  only screen and (max-width:750px) {
+    .headreContainer{
+        z-index: 1;
+        flex-direction: column;
+    }
+    .headreContainer div:nth-child(2){
+        display: none;
+    }
+    .footerContainer{
+        background: #6728FF;
+    }
+    .FooterCard{
+        width: 95%;
+    }
+    .FooterTexContainer{
+        width:  85%;
+    }
+}

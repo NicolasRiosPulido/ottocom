@@ -42,7 +42,7 @@
 .homeImgContainer{
   position: relative;
   width: 400px;
-margin-right: 90px;
+  margin-right: 90px;
 }
 .cellPhoneA{
   position: absolute;
@@ -90,8 +90,6 @@ margin-right: 90px;
 
 /* ComoFunciona */
 .ComoFunciona{
-  width: var(--main-bodey-width);
-  margin: 0 auto;
   padding-top: 80px;
 }
 .ComoFuncionaCard{
@@ -252,4 +250,47 @@ margin: 61px 0px 0px;
   margin: 0px 24px;
   font-size: 14px;
   line-height: 22px;
+}
+
+/* Responsibe */
+@media  only screen and (max-width:750px) {
+  .Security{
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+  }
+  .OpenContainer{
+    background: linear-gradient(135.25deg, #6728FF 5.57%, #FFA3FE 148.79%);
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+    height: fit-content;
+    padding: 60px 16px;
+  }
+  .OpenBody{
+    flex-direction: column;
+    width: 100%;
+  }
+  .OpenHomeTextDesc{
+    width: 100%;
+  }
+  .OpenTextContainer h2{
+    width: 100%;
+  }
+  .Instrucciones{
+    height: fit-content;
+  }
+  .planPremium{
+    width: 95%;
+  }
+  .main_Title{
+    margin: 0px 16px 20px;
+  }
+  .desc_title{
+    margin: 0px 16px;
+  }
+  .ComoFuncionaCard{
+    width: 95%;
+  }
+  .InstruccionesCard{
+    width: 95%;
+  }
 }

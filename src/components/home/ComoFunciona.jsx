@@ -3,7 +3,7 @@ import styles from '../../styles/Home.module.css';
 
 const ComoFunciona = () => {
     return (
-        <div className={styles.ComoFunciona}>
+        <div className={`secction_body ${styles.ComoFunciona}`}>
             <p className={styles.main_Title}>¿Como funciona?</p>
             <div className="row">
                 <div className={styles.ComoFuncionaCard}>
