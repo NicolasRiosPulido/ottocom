@@ -30,7 +30,7 @@ const OpenHome = () => {
                     <h2 >Toma el control de tus finanzas personales</h2>
                     <p className={styles.OpenHomeTextDesc}>Logra tus metas de ahorro, paga tus deudas y disfruta de una buena
                     salud financiera. Otto te ayuda a planificar tus finanzas de manera
-             inteligente, automatica y personalizada.</p>
+             inteligente, automatica y personalizada</p>
                     <LinksApps />
                     <span style={{ height: 78 }} />
                     <Btn />
