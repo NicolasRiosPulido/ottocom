@@ -25,7 +25,7 @@
   margin-bottom: 40px;
 }
 /* OpenHome */
-.OpenContainer{
+.OpenContainer{ 
   height: 100vh;
   background-image: url("../assets/home/Mask.png");
   background-size: 100% 100%;
@@ -37,12 +37,12 @@
 .OpenBody{
   display: flex;
   width: var(--main-bodey-width);
-  height: 65%;
+  height: 75%;
 }
 .homeImgContainer{
   position: relative;
   width: 400px;
-  margin-right: 90px;
+  margin-right: 50px;
 }
 .cellPhoneA{
   position: absolute;
@@ -83,7 +83,7 @@
   margin-bottom: 20px;
 }
 .OpenHomeTextCount{
-  color: #E4E4E4;
+  color: #E4E4E4; 
   font-weight: 700;
   margin-bottom: 80px;
 }
@@ -97,8 +97,8 @@
   height: 420px;
   display: flex;
   flex-direction: column;
-  padding: 20px 40px;
-  margin-top: 40px;
+  padding: 20px 25px;
+  margin-top: 40px; 
 }
 .ComoFuncionaImg{
   object-fit: contain;
@@ -155,7 +155,7 @@
 
 .Instrucciones{
   background-image: url("../assets/home/Mask_I.png");
-  height: 100vh;
+  padding-bottom: 60px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin-bottom: 100px;
@@ -166,6 +166,7 @@
   box-shadow: 0px 0px 10px #F1ECFF;
   border-radius: 15px;
   padding: 40px;
+  margin-top: 50px;
 }
 .InstruccionesCard p:nth-child(2){
   size: 24px;
@@ -183,29 +184,35 @@
   border-radius: 50%;
 }
 .instructionPhine{
-  margin: 0px 40px 100px;
+  margin: 0px 40px 50px;
 }
 
-/* News Letter */
+/* Contacto */
 
 .NewsLetter{
-  height: 206px;
-  background: linear-gradient(114.44deg, #624AF2 0%, #50DDC3 100%);
-  border-radius: 50px;
-  position: relative;
-  margin: 500px 0px 190px;
-  padding: 28px 68px;
+  background: #FFFFFF;
+  box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+  margin-bottom: 93px;
+  padding: 54px 54px;
+  display: flex;
+  justify-content: space-around;
+}
+.ContactForm{
+  max-width: 670px;
 }
 .NewsLetter h3{
-  color: #FFF;
+  color: #535353;
   font-size: 32px;
   line-height: 62px;
   margin-bottom: 13px; 
+  font-weight: 700;
 }
-.newsLetterImg{
-  position: absolute;
-  right: 178px;
-  top: -335px;
+.NewsLetter h4{
+  color: #A1A4AC;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 42px;
 }
  .inputNewsLetter{
   background-color: #EFF0F6;
