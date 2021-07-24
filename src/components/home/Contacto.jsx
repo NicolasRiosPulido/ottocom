@@ -4,6 +4,9 @@ import styles from '../../styles/Home.module.css';
 import Btn from '../general/Btn';
 
 const Contacto = () => {
+    const submit = () => {
+        alert('envio')
+    }
     return (
         <div className={`secction_body`}>
             <div className={styles.NewsLetter}>
@@ -13,14 +16,18 @@ const Contacto = () => {
                         Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.
                     </h4>
                     <div className="row_line">
-                        <label>Nombre</label>
-                        <input className={styles.inputNewsLetter} type="text" />
-                        <label>Correo</label>
-                        <input className={styles.inputNewsLetter} type="text" />
+                        <div>
+                            <label>Nombre</label>
+                            <input className={styles.inputNewsLetter} type="text" />
+                        </div>
+                        <div>
+                            <label>Correo</label>
+                            <input className={styles.inputNewsLetter} type="text" />
+                        </div>
                     </div>
-                    <textarea className={styles.inputNewsLetter} type="text" rows="4" cols="50" />
+                    <textarea className={`${styles.inputNewsLetter} ${styles.textAreNL}`} type="text" rows="4" cols="50" />
                     <div className="row_right">
-                        <Btn />
+                        <Btn onClick={submit} />
                     </div>
                 </div>
                 <Image

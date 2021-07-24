@@ -2,10 +2,10 @@ import styles from '../../styles/General.module.css';
 
 const Btn = (props) => {
 
-    const { Title = 'Boton' } = props
+    const { Title = 'Boton', onClick } = props
 
     return (
-        <div className={styles.btnContainer}>
+        <div className={styles.btnContainer} onClick={onClick}>
             <p>{Title}</p>
         </div>
     )

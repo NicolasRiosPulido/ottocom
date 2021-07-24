@@ -9,7 +9,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+input, textarea{
+  font-family: Roboto;
+}
 * {
   box-sizing: border-box;
 } 
@@ -34,6 +36,13 @@ h1, h2, h3, h4, h5, h6, p{
 .row{
   display: flex;
   justify-content: space-between;
+}
+.row_r{
+  display: flex;
+  justify-content: space-between;
+}
+.row_line_r{
+  display: flex;
 }
 .row_line{
   display: flex;
@@ -64,7 +73,7 @@ h1, h2, h3, h4, h5, h6, p{
 /* Responsibe */
 
 @media  only screen and (max-width:750px) {
-  .row, .row_center{
+  .row, .row_center, .row_line{
     flex-direction: column;
     align-items: center;
   }

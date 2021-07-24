@@ -1,8 +1,10 @@
 import Image from 'next/image';
+import { useMediaQuery } from 'react-responsive';
 
 const Social = () => {
+    const isMobile = useMediaQuery({ query: '(min-device-width: 700px)' })
     return (
-        <div className="row" style={{ width: 140 }}>
+        <div className="row_r" style={{ width: 140, marginTop: isMobile ? 0 : 20 }}>
             <Image
                 src={'/images/social/facebook-logo-button.png'}
                 alt="iphon descripcion"
