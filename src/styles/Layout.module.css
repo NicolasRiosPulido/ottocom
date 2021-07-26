@@ -83,7 +83,7 @@
         display: none;
     }
     .footerContainer{
-        background: #6728FF;
+        background: var(--main-color);
     }
     .FooterCard{
         width: 95%;

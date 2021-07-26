@@ -186,7 +186,7 @@
   font-size: 18px;
 }
 .iconContainer{
-  background: #6728FF;
+  background: var(--main-color); 
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -286,7 +286,7 @@ margin: 61px 0px 0px;
     align-items: center;
   }
   .OpenContainer{
-    background: linear-gradient(135.25deg, #6728FF 5.57%, #FFA3FE 148.79%);
+    background: linear-gradient(135.25deg, var(--main-color) 5.57%, #FFA3FE 148.79%);
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
     height: fit-content;
     padding: 90px 16px;

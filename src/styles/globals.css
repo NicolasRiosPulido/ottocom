@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 :root {
   --main-bodey-width: 1410px;
+  --main-color: #6728FF
 }
 .secction_body{
   width: var(--main-bodey-width);
@@ -64,7 +65,6 @@ h1, h2, h3, h4, h5, h6, p{
   justify-content: center;
   align-items: center;
 }
-
 /*Boton de facebook*/
 .kep-login-facebook.metro {
   background: blue;

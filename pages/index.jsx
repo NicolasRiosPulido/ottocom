@@ -6,7 +6,6 @@ import ComoFunciona from '../src/components/home/ComoFunciona';
 import Subscripciones from '../src/components/home/Subscripciones';
 import Instrucciones from '../src/components/home/Instrucciones';
 import Contacto from '../src/components/home/Contacto';
-import Security from '../src/components/home/Security';
 
 export default function Home(props) {
   return (
