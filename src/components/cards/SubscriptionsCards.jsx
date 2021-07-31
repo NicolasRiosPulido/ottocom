@@ -1,4 +1,5 @@
 import styles from '../../styles/Home.module.css';
+import { useMediaQuery } from 'react-responsive';
 import { CheckmarkCircleOutline, CloseCircleOutline } from 'react-ionicons';
 
 const BENEFICIOS_BASICO = [
@@ -37,27 +38,30 @@ const BENEFICIOS_PREMIUN = [
 ]
 
 export const SubscriptionsCardsA = () => {
+    const isMobile = useMediaQuery({ query: '(min-device-width: 700px)' })
     return (
         <div className={styles.planBasico}>
             <p className={styles.genera_title}>Plan Basico</p>
             <p className={styles.currency}>Gratis</p>
-            {BENEFICIOS_BASICO.map((item) => (
-                <div className={`row_line_r ${styles.benefitLine}`}>
-                    {item.valid ?
-                        <CheckmarkCircleOutline
-                            color={'#58CB98'}
-                            height="28px"
-                            width="28px"
-                        /> :
-                        <CloseCircleOutline
-                            color={'#FB6969'}
-                            height="28px"
-                            width="28px"
-                        />
-                    }
-                    <p>{item.value}</p>
-                </div>
-            ))}
+            <div className={!isMobile && styles.benefistContainer}>
+                {BENEFICIOS_BASICO.map((item) => (
+                    <div className={`row_line_r ${styles.benefitLine}`}>
+                        {item.valid ?
+                            <CheckmarkCircleOutline
+                                color={'#58CB98'}
+                                height="28px"
+                                width="28px"
+                            /> :
+                            <CloseCircleOutline
+                                color={'#FB6969'}
+                                height="28px"
+                                width="28px"
+                            />
+                        }
+                        <p>{item.value}</p>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }

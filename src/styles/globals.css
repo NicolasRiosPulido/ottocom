@@ -70,6 +70,10 @@ h1, h2, h3, h4, h5, h6, p{
   justify-content: center;
   align-items: center;
 }
+.c_v{
+  display: flex;
+  flex-direction: column;
+}
 /*Boton de facebook*/
 .kep-login-facebook.metro {
   background: blue;

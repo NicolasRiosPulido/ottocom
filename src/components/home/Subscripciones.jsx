@@ -14,28 +14,31 @@ SwiperCore.use([EffectCube, Pagination]);
 
 const Subscripciones = () => {
     const isMobile = useMediaQuery({ query: '(min-device-width: 700px)' })
+    const title = <p className={styles.main_Title}>Pruébalo sin costo</p>
+
     if (!isMobile) {
         return (
-            <Swiper effect={'cube'} grabCursor={true} cubeEffect={{
-                "shadow": true,
-                "slideShadows": true,
-                "shadowOffset": 20,
-                "shadowScale": 0.94
-            }} pagination={true} className="mySwiper">
-                <SwiperSlide>
-                    <SubscriptionsCardsA />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <SubscriptionsCardsB />
-                </SwiperSlide>
-            </Swiper>
+            <>
+                {title}
+                <Swiper effect={'cube'} grabCursor={true} cubeEffect={{
+                    "shadow": true,
+                    "slideShadows": true,
+                    "shadowOffset": 20,
+                    "shadowScale": 0.94
+                }} pagination={true} className="mySwiper">
+                    <SwiperSlide>
+                        <SubscriptionsCardsA />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <SubscriptionsCardsB />
+                    </SwiperSlide>
+                </Swiper>
+            </>
         )
     }
     return (
         <>
-            <p className={styles.main_Title}>
-                Pruébalo sin costo
-            </p>
+            {title}
             <p className={styles.desc_title}>
                 Descarga el app crea tus presupuestos, cumple tus metas y más, por tres meses sin costo ni cargos a tu tarjeta
             </p>

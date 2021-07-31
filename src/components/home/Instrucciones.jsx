@@ -8,7 +8,7 @@ const Instrucciones = () => {
     return (
         <div className={styles.Instrucciones}>
             <div className={`secction_body row_center`}>
-                <div>
+                <div className={styles.InstruccionesCardFirst}>
                     <div className={styles.InstruccionesCard}>
                         <div className={`c_t ${styles.iconContainer}`}>
                             <PieChartOutline
@@ -76,7 +76,7 @@ const Instrucciones = () => {
                     </div>
                 </div>
             </div>
-            <div className={`secction_body row_center`}>
+            <div className={`secction_body row_center ${styles.InstructionsBtnCon}`}>
                 <Btn Title="Descargar App" />
             </div>
         </div>

@@ -93,8 +93,8 @@
   padding-top: 80px;
 }
 .ComoFuncionaSwiper{
-  height: 400px;
-  margin-bottom: 20px;
+  height: 420px;
+  margin-bottom: 30px;
 }
 .ComoFuncionaCard{
   width: 420px;
@@ -319,11 +319,13 @@ margin: 61px 0px 0px;
   .planPremium{
     width: 95%;
     margin: 0 auto;
+    padding: 25px;
   }
   .planBasico{
     width: 95%;
     height: 605px;
     margin: 0 auto;
+    padding: 25px;
   }
   .currency{
     font-size: 34px;
@@ -337,8 +339,23 @@ margin: 61px 0px 0px;
   .ComoFuncionaCard{
     width: 100%;
   }
+  .InstruccionesCardFirst{
+    order: 1;
+  }
+  .instructionPhine{
+    margin: 40px 0px 0px 0px;
+  }
+  .Instrucciones{
+    background: linear-gradient(183.64deg, #FFFFFF -12.1%, #F7F7F7 97.57%);
+    clip-path: polygon(0 0, 100% 0%, 100% 97%, 0% 100%);
+  }
   .InstruccionesCard{
-    width: 95%;
+    width: 100%;
+    padding: 30px;
+    margin-top: 30px;
+  }
+  .InstructionsBtnCon{
+    margin: 45px 0px;
   }
   .inputNewsLetter{
     margin-right: 0px;

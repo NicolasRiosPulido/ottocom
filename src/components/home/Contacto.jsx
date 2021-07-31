@@ -16,11 +16,11 @@ const Contacto = () => {
                         Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.
                     </h4>
                     <div className="row_line">
-                        <div>
+                        <div className="c_v">
                             <label>Nombre</label>
                             <input className={styles.inputNewsLetter} type="text" />
                         </div>
-                        <div>
+                        <div className="c_v">
                             <label>Correo</label>
                             <input className={styles.inputNewsLetter} type="text" />
                         </div>
