@@ -87,7 +87,10 @@
   font-weight: 700;
   margin-bottom: 80px;
 }
-
+/* Phones */
+.swiperPhones{
+  height: 410px;
+}
 /* ComoFunciona */
 .ComoFunciona{
   padding-top: 80px;

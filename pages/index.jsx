@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 import Layout from '../src/components/layout';
 import OpenHome from '../src/components/home/OpenHome';
+import Phones from '../src/components/home/Phones';
 import ComoFunciona from '../src/components/home/ComoFunciona';
 import Subscripciones from '../src/components/home/Subscripciones';
 import Instrucciones from '../src/components/home/Instrucciones';
@@ -100,6 +101,7 @@ export default function Home(props) {
       </Head>
       <div>
         <OpenHome />
+        <Phones />
         <ComoFunciona />
         <Subscripciones />
         <Instrucciones />
