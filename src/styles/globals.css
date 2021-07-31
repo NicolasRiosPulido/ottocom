@@ -28,7 +28,8 @@ h1, h2, h3, h4, h5, h6, p{
 
 :root {
   --main-bodey-width: 1410px;
-  --main-color: #6728FF
+  --main-color: #6728FF;
+  --main-color-green: #58CB98;
 }
 .secction_body{
   width: var(--main-bodey-width);
@@ -42,10 +43,10 @@ h1, h2, h3, h4, h5, h6, p{
   display: flex;
   justify-content: space-between;
 }
-.row_line_r{
+.row_line{
   display: flex;
 }
-.row_line{
+.row_line_r{
   display: flex;
 }
 .row_aling{
@@ -53,6 +54,10 @@ h1, h2, h3, h4, h5, h6, p{
   align-items: center;
 }
 .row_center{
+  display: flex;
+  justify-content: center;
+}
+.row_center_r{
   display: flex;
   justify-content: center;
 }
@@ -69,7 +74,15 @@ h1, h2, h3, h4, h5, h6, p{
 .kep-login-facebook.metro {
   background: blue;
 }
-
+/* swiper */
+.swiper-pagination-bullet {
+  width: 32px !important;
+  height: 3px !important;
+  border-radius: 3px !important;
+}
+.swiper-pagination-bullet-active {
+  background: var(--main-color-green) !important;
+}
 /* Responsibe */
 
 @media  only screen and (max-width:750px) {

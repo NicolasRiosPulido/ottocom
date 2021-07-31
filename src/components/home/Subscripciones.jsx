@@ -1,86 +1,47 @@
 import styles from '../../styles/Home.module.css';
-import { CheckmarkCircleOutline, CloseCircleOutline } from 'react-ionicons';
+import { useMediaQuery } from 'react-responsive';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.min.css";
+import "swiper/components/effect-cube/effect-cube.min.css";
+import "swiper/components/pagination/pagination.min.css";
+import SwiperCore, {
+    EffectCube, Pagination
+} from 'swiper/core';
 
-const BENEFICIOS_BASICO = [
-    {
-        value: 'Registro de transacciones',
-        valid: true
-    },
-    {
-        value: 'Clasificacion de transacciones por cateoria',
-        valid: true
-    },
-    {
-        value: 'Metas de ahorro y deuda',
-        valid: true
-    },
-    {
-        value: 'Consejos para mejorar tu salud financiera',
-        valid: true
-    },
-    {
-        value: 'Conexion automatica a cuentas bancarias',
-        valid: false
-    },
-    {
-        value: 'Categorizacion inteligente de transacciones',
-        valid: false
-    },
-]
-const BENEFICIOS_PREMIUN = [
-    'Registro de transacciones',
-    'Clasificacion de transacciones por cateoria',
-    'Metas de ahorro y deuda',
-    'Consejos para mejorar tu salud financiera',
-    'Conexion automatica a cuentas bancarias',
-    'Categorizacion inteligente de transacciones'
-]
+import { SubscriptionsCardsA, SubscriptionsCardsB } from '../cards/SubscriptionsCards';
+
+SwiperCore.use([EffectCube, Pagination]);
 
 const Subscripciones = () => {
+    const isMobile = useMediaQuery({ query: '(min-device-width: 700px)' })
+    if (!isMobile) {
+        return (
+            <Swiper effect={'cube'} grabCursor={true} cubeEffect={{
+                "shadow": true,
+                "slideShadows": true,
+                "shadowOffset": 20,
+                "shadowScale": 0.94
+            }} pagination={true} className="mySwiper">
+                <SwiperSlide>
+                    <SubscriptionsCardsA />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <SubscriptionsCardsB />
+                </SwiperSlide>
+            </Swiper>
+        )
+    }
     return (
         <>
-            <p className={styles.main_Title}>Pruébalo sin costo</p>
+            <p className={styles.main_Title}>
+                Pruébalo sin costo
+            </p>
             <p className={styles.desc_title}>
                 Descarga el app crea tus presupuestos, cumple tus metas y más, por tres meses sin costo ni cargos a tu tarjeta
             </p>
-            <div className={`row_center ${styles.Subscripciones}`}>
-                <div className={styles.planBasico}>
-                    <p className={styles.genera_title}>Plan Basico</p>
-                    <p className={styles.currency}>Gratis</p>
-                    {BENEFICIOS_BASICO.map((item) => (
-                        <div className={`row_line_r ${styles.benefitLine}`}>
-                            {item.valid ?
-                                <CheckmarkCircleOutline
-                                    color={'#58CB98'}
-                                    height="28px"
-                                    width="28px"
-                                /> :
-                                <CloseCircleOutline
-                                    color={'#FB6969'}
-                                    height="28px"
-                                    width="28px"
-                                />
-                            }
-                            <p>{item.value}</p>
-                        </div>
-                    ))}
-                </div>
-                <div className={styles.planPremium}>
-                    <p className={styles.genera_title}>Plan Premium</p>
-                    <p className={styles.currency}>Próximamente</p>
-                    <div className={styles.benefistContainer}>
-                        {BENEFICIOS_PREMIUN.map((item) => (
-                            <div className={`row_line_r ${styles.benefitLine}`}>
-                                <CheckmarkCircleOutline
-                                    color={'#58CB98'}
-                                    height="28px"
-                                    width="28px"
-                                />
-                                <p>{item}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+            <div className={`row_center_r ${styles.Subscripciones}`}>
+                <SubscriptionsCardsA />
+                <SubscriptionsCardsB />
             </div>
         </>
     )

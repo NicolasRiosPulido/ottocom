@@ -17,7 +17,9 @@ const Instrucciones = () => {
                                 width="40px"
                             />
                         </div>
-                        <p >Balance consolidado</p>
+                        <p >
+                            Balance consolidado
+                        </p>
                         <p>
                             Balance de ingresos y gastos en teimpo real
                         </p>

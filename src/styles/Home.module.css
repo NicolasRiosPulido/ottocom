@@ -92,6 +92,10 @@
 .ComoFunciona{
   padding-top: 80px;
 }
+.ComoFuncionaSwiper{
+  height: 400px;
+  margin-bottom: 20px;
+}
 .ComoFuncionaCard{
   width: 420px;
   height: 420px;
@@ -285,6 +289,7 @@ margin: 61px 0px 0px;
     height: fit-content;
     align-items: center;
   }
+  /* Open */
   .OpenContainer{
     background: linear-gradient(135.25deg, var(--main-color) 5.57%, #FFA3FE 148.79%);
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
@@ -313,6 +318,15 @@ margin: 61px 0px 0px;
   }
   .planPremium{
     width: 95%;
+    margin: 0 auto;
+  }
+  .planBasico{
+    width: 95%;
+    height: 605px;
+    margin: 0 auto;
+  }
+  .currency{
+    font-size: 34px;
   }
   .main_Title{
     margin: 0px 16px 20px;
@@ -321,7 +335,7 @@ margin: 61px 0px 0px;
     margin: 0px 16px;
   }
   .ComoFuncionaCard{
-    width: 95%;
+    width: 100%;
   }
   .InstruccionesCard{
     width: 95%;
