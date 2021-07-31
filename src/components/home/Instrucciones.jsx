@@ -38,10 +38,11 @@ const Instrucciones = () => {
                 </div>
                 <div className={styles.instructionPhine}>
                     <Image
-                        src={'/images/home/iPhone_X.png'}
+                        src={'/images/home/iPhoneC.png'}
                         alt="iphon descripcion"
-                        width={366}
-                        height={754}
+                        quality={100}
+                        width={390}
+                        height={720}
                     />
                 </div>
                 <div>

@@ -13,18 +13,20 @@ const OpenHome = () => {
                 <div className={styles.homeImgContainer}>
                     <div className={styles.cellPhoneA}>
                         <Image
-                            src={'/images/home/iPhone_X.png'}
+                            src={'/images/home/iPhoneA.png'}
                             alt="iphon descripcion"
                             layout='fill'
                             objectFit='contain'
+                            quality={100}
                         />
                     </div>
                     <div className={styles.cellPhoneB}>
                         <Image
-                            src={'/images/home/iPhone_X.png'}
+                            src={'/images/home/iPhoneB.png'}
                             alt="iphon descripcion"
                             layout='fill'
                             objectFit='contain'
+                            quality={100}
                         />
                     </div>
                 </div>

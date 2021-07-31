@@ -94,9 +94,9 @@ export default function Home(props) {
         <title>Otto App</title>
         <link rel="canonical" href="https://otto-app.com/"></link>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="amphtml" href="https://testottodotcom.vercel.app/amp" />
+        <link rel="amphtml" href="https://otto-app.com/amp" />
         <meta name="description" content="Toma el control de tus finanzas personales con otto"></meta>
-        <script type="application/ld+json" dangerouslySetInnerHTML={DATA_ESTRUCTURADA} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(DATA_ESTRUCTURADA) }} />
       </Head>
       <div>
         <OpenHome />
