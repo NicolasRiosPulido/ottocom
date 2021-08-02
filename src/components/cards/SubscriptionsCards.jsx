@@ -1,5 +1,4 @@
 import styles from '../../styles/Home.module.css';
-import { useMediaQuery } from 'react-responsive';
 import { CheckmarkCircleOutline, CloseCircleOutline } from 'react-ionicons';
 
 const BENEFICIOS_BASICO = [
@@ -38,12 +37,11 @@ const BENEFICIOS_PREMIUN = [
 ]
 
 export const SubscriptionsCardsA = () => {
-    const isMobile = useMediaQuery({ query: '(min-device-width: 700px)' })
     return (
         <div className={styles.planBasico}>
             <p className={styles.genera_title}>Plan Basico</p>
             <p className={styles.currency}>Gratis</p>
-            <div className={!isMobile && styles.benefistContainer}>
+            <div className={styles.benefistContainer}>
                 {BENEFICIOS_BASICO.map((item, index) => (
                     <div className={`row_line_r ${styles.benefitLine}`} key={index}>
                         {item.valid ?

@@ -147,14 +147,6 @@
   padding: 25px 40px;
   color: #FFF;
 }
-.benefistContainer{
-  display: flex;
-  flex-direction: column;
-  flex-shrink: inherit;
-  height: 360px;
-  margin-top: 26px;
-  justify-content: space-between;
-}
 .benefitLine{
   display: flex;
   align-items: center;
@@ -332,6 +324,14 @@ margin: 61px 0px 0px;
     height: 605px;
     margin: 0 auto;
     padding: 25px;
+  }
+  .benefistContainer{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: inherit;
+    height: 360px;
+    margin-top: 26px;
+    justify-content: space-between;
   }
   .currency{
     font-size: 34px;
