@@ -20,12 +20,18 @@ const Subscripciones = () => {
         return (
             <>
                 {title}
-                <Swiper effect={'cube'} grabCursor={true} cubeEffect={{
-                    "shadow": true,
-                    "slideShadows": true,
-                    "shadowOffset": 20,
-                    "shadowScale": 0.94
-                }} pagination={true} className="mySwiper">
+                <Swiper
+                    effect={'cube'}
+                    grabCursor={true}
+                    cubeEffect={{
+                        "shadow": true,
+                        "slideShadows": true,
+                        "shadowOffset": 20,
+                        "shadowScale": 0.94
+                    }}
+                    pagination={true}
+                    className="mySwiper"
+                >
                     <SwiperSlide>
                         <SubscriptionsCardsA />
                     </SwiperSlide>

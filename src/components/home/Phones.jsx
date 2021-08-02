@@ -15,17 +15,25 @@ SwiperCore.use([EffectCoverflow, Pagination]);
 const Phones = () => {
     const isMobile = useMediaQuery({ query: '(min-device-width: 700px)' })
     if (isMobile) {
-        return null
+        return <></>
     }
     return (
         <>
-            <Swiper effect={'coverflow'} grabCursor={true} centeredSlides={true} slidesPerView={'auto'} coverflowEffect={{
-                "rotate": 50,
-                "stretch": 0,
-                "depth": 100,
-                "modifier": 1,
-                "slideShadows": true
-            }} pagination={true} className="mySwiper">
+            <Swiper
+                effect={'coverflow'}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={'auto'}
+                coverflowEffect={{
+                    "rotate": 50,
+                    "stretch": 0,
+                    "depth": 100,
+                    "modifier": 1,
+                    "slideShadows": true
+                }}
+                pagination={true}
+                className="mySwiper"
+            >
                 <SwiperSlide>
                     <Image
                         src={'/images/home/iPhoneA.png'}

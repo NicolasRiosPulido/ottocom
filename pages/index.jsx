@@ -101,7 +101,6 @@ export default function Home(props) {
       </Head>
       <div>
         <OpenHome />
-        <Phones />
         <ComoFunciona />
         <Subscripciones />
         <Instrucciones />
