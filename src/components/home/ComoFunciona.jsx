@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
@@ -13,39 +14,47 @@ import { ComoFuncionaCardA, ComoFuncionaCardB, ComoFuncionaCardC, ComoFuncionaCa
 SwiperCore.use([Pagination]);
 
 const ComoFunciona = () => {
+    const [mobile, setmobile] = useState(false)
     const isMobile = useMediaQuery({ query: '(min-device-width: 700px)' })
+
     const titele = <p className={styles.main_Title}>¿Como funciona?</p>
-    if (!isMobile) {
+
+    useEffect(() => {
+        setmobile(isMobile)
+    }, [isMobile])
+
+    if (mobile) {
         return (
-            <>
+            <div className={`secction_body ${styles.ComoFunciona}`}>
                 {titele}
-                <Swiper pagination={true} className={styles.ComoFuncionaSwiper}>
-                    <SwiperSlide>
-                        <ComoFuncionaCardA />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ComoFuncionaCardB />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ComoFuncionaCardC />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ComoFuncionaCardD />
-                    </SwiperSlide>
-                </Swiper>
-            </>
+                <div className="row">
+                    <ComoFuncionaCardA />
+                    <ComoFuncionaCardB />
+                    <ComoFuncionaCardC />
+                    <ComoFuncionaCardD />
+                </div>
+            </div>
+
         )
     }
     return (
-        <div className={`secction_body ${styles.ComoFunciona}`}>
+        <>
             {titele}
-            <div className="row">
-                <ComoFuncionaCardA />
-                <ComoFuncionaCardB />
-                <ComoFuncionaCardC />
-                <ComoFuncionaCardD />
-            </div>
-        </div>
+            <Swiper pagination={true} className={styles.ComoFuncionaSwiper}>
+                <SwiperSlide>
+                    <ComoFuncionaCardA />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <ComoFuncionaCardB />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <ComoFuncionaCardC />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <ComoFuncionaCardD />
+                </SwiperSlide>
+            </Swiper>
+        </>
     )
 }
 

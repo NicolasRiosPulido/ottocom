@@ -44,8 +44,8 @@ export const SubscriptionsCardsA = () => {
             <p className={styles.genera_title}>Plan Basico</p>
             <p className={styles.currency}>Gratis</p>
             <div className={!isMobile && styles.benefistContainer}>
-                {BENEFICIOS_BASICO.map((item) => (
-                    <div className={`row_line_r ${styles.benefitLine}`}>
+                {BENEFICIOS_BASICO.map((item, index) => (
+                    <div className={`row_line_r ${styles.benefitLine}`} key={index}>
                         {item.valid ?
                             <CheckmarkCircleOutline
                                 color={'#58CB98'}
@@ -72,8 +72,8 @@ export const SubscriptionsCardsB = () => {
             <p className={styles.genera_title}>Plan Premium</p>
             <p className={styles.currency}>Próximamente</p>
             <div className={styles.benefistContainer}>
-                {BENEFICIOS_PREMIUN.map((item) => (
-                    <div className={`row_line_r ${styles.benefitLine}`}>
+                {BENEFICIOS_PREMIUN.map((item, index) => (
+                    <div className={`row_line_r ${styles.benefitLine}`} key={index}>
                         <CheckmarkCircleOutline
                             color={'#58CB98'}
                             height="28px"

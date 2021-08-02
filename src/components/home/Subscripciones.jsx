@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import styles from '../../styles/Home.module.css';
 import { useMediaQuery } from 'react-responsive';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -15,8 +15,9 @@ SwiperCore.use([EffectCube, Pagination]);
 
 const Subscripciones = () => {
     const [mobile, setmobile] = useState(false)
-    const title = <p className={styles.main_Title}>Pruébalo sin costo</p>
     const isMobile = useMediaQuery({ query: '(min-device-width: 700px)' })
+
+    const title = <p className={styles.main_Title}>Pruébalo sin costo</p>
 
     useEffect(() => {
         setmobile(isMobile)
