@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import styles from '../../styles/Home.module.css';
 import { useMediaQuery } from 'react-responsive';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,45 +14,49 @@ import { SubscriptionsCardsA, SubscriptionsCardsB } from '../cards/Subscriptions
 SwiperCore.use([EffectCube, Pagination]);
 
 const Subscripciones = () => {
-    const isMobile = useMediaQuery({ query: '(min-device-width: 700px)' })
+    const [mobile, setmobile] = useState(false)
     const title = <p className={styles.main_Title}>Pruébalo sin costo</p>
+    const isMobile = useMediaQuery({ query: '(min-device-width: 700px)' })
 
-    if (!isMobile) {
+    useEffect(() => {
+        setmobile(isMobile)
+    }, [isMobile])
+
+    if (mobile) {
         return (
-            <>
+            <div>
                 {title}
-                <Swiper
-                    effect={'cube'}
-                    grabCursor={true}
-                    cubeEffect={{
-                        "shadow": true,
-                        "slideShadows": true,
-                        "shadowOffset": 20,
-                        "shadowScale": 0.94
-                    }}
-                    pagination={true}
-                    className="mySwiper"
-                >
-                    <SwiperSlide>
-                        <SubscriptionsCardsA />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <SubscriptionsCardsB />
-                    </SwiperSlide>
-                </Swiper>
-            </>
+                <p className={styles.desc_title}>
+                    Descarga el app crea tus presupuestos, cumple tus metas y más, por tres meses sin costo ni cargos a tu tarjeta
+                </p>
+                <div className={`row_center_r ${styles.Subscripciones}`}>
+                    <SubscriptionsCardsA />
+                    <SubscriptionsCardsB />
+                </div>
+            </div>
         )
     }
     return (
         <>
             {title}
-            <p className={styles.desc_title}>
-                Descarga el app crea tus presupuestos, cumple tus metas y más, por tres meses sin costo ni cargos a tu tarjeta
-            </p>
-            <div className={`row_center_r ${styles.Subscripciones}`}>
-                <SubscriptionsCardsA />
-                <SubscriptionsCardsB />
-            </div>
+            <Swiper
+                effect={'cube'}
+                grabCursor={true}
+                cubeEffect={{
+                    "shadow": true,
+                    "slideShadows": true,
+                    "shadowOffset": 20,
+                    "shadowScale": 0.94
+                }}
+                pagination={true}
+            >
+                <SwiperSlide>
+                    <SubscriptionsCardsA />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <SubscriptionsCardsB />
+                </SwiperSlide>
+            </Swiper>
         </>
     )
 }
