@@ -14,7 +14,7 @@ import { ComoFuncionaCardA, ComoFuncionaCardB, ComoFuncionaCardC, ComoFuncionaCa
 SwiperCore.use([Pagination]);
 
 const ComoFunciona = () => {
-    const [mobile, setmobile] = useState(false)
+    const [mobile, setmobile] = useState(true)
     const isMobile = useMediaQuery({ query: '(min-device-width: 700px)' })
 
     const titele = <p className={styles.main_Title}>¿Como funciona?</p>

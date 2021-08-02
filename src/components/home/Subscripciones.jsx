@@ -14,7 +14,7 @@ import { SubscriptionsCardsA, SubscriptionsCardsB } from '../cards/Subscriptions
 SwiperCore.use([EffectCube, Pagination]);
 
 const Subscripciones = () => {
-    const [mobile, setmobile] = useState(false)
+    const [mobile, setmobile] = useState(true)
     const isMobile = useMediaQuery({ query: '(min-device-width: 700px)' })
 
     const title = <p className={styles.main_Title}>Pruébalo sin costo</p>
