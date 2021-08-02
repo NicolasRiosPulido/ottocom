@@ -175,6 +175,9 @@
   background-repeat: no-repeat;
   margin-bottom: 100px;
 }
+.Instrucciones span{
+  line-height: 0px;
+}
 .InstruccionesCard{
   width: 420px;
   height: 252px;

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { PieChartOutline } from 'react-ionicons';
+import { PieChartOutline, CalendarOutline, SwapHorizontalOutline, OptionsOutline } from 'react-ionicons';
 import styles from '../../styles/Home.module.css';
 
 import Btn from '../general/Btn';
@@ -26,10 +26,10 @@ const Instrucciones = () => {
                     </div>
                     <div className={styles.InstruccionesCard}>
                         <div className={`c_t ${styles.iconContainer}`}>
-                            <PieChartOutline
+                            <SwapHorizontalOutline
                                 color={'#FFF'}
-                                height="40px"
-                                width="40px"
+                                height="35px"
+                                width="35px"
                             />
                         </div>
                         <p >Transacciones</p>
@@ -50,10 +50,10 @@ const Instrucciones = () => {
                 <div>
                     <div className={styles.InstruccionesCard}>
                         <div className={`c_t ${styles.iconContainer}`}>
-                            <PieChartOutline
+                            <CalendarOutline
                                 color={'#FFF'}
-                                height="40px"
-                                width="40px"
+                                height="30px"
+                                width="30px"
                             />
                         </div>
                         <p >Movimientos programados</p>
@@ -63,10 +63,10 @@ const Instrucciones = () => {
                     </div>
                     <div className={styles.InstruccionesCard}>
                         <div className={`c_t ${styles.iconContainer}`}>
-                            <PieChartOutline
+                            <OptionsOutline
                                 color={'#FFF'}
-                                height="40px"
-                                width="40px"
+                                height="35px"
+                                width="35px"
                             />
                         </div>
                         <p >Filtra tus movimientos</p>
