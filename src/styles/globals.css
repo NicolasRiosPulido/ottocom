@@ -74,6 +74,9 @@ h1, h2, h3, h4, h5, h6, p{
   display: flex;
   flex-direction: column;
 }
+.p_r{
+  position: relative;
+}
 /*Boton de facebook*/
 .kep-login-facebook.metro {
   background: blue;

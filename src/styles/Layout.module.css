@@ -26,12 +26,12 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 640px;
-    margin-top: 140px;
+    margin-top: 300px;
 }
 .FooterCard{
     max-width: 1140px;
-    height: 344px;
-    margin: -110px auto 0;
+    height: 540px;
+    margin: -290px auto 0;
     background: #FFF;
     box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.06);
     border-radius: 15px;
@@ -47,17 +47,48 @@
 .FooterLine{
     height: 4px;
     background-color: #5A38FD;
-    margin-bottom: 94px;
+    margin-bottom: 46px;
+}
+.socialCOntainer{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-bottom: 46px;
 }
 .FooterCardTitle{
-    color: #1C1F28;
-    margin-bottom: 20px;
+    color: #3D5A80;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 46px;
     text-align: center;
 }
+.FooterCardshare{
+    color: #3D5A80;
+    opacity: 50%;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+.inputShare{
+    background: rgba(157, 157, 157, 0.04);
+    width: 512px;
+    height: 53px;
+    border-radius: 16px;
+    border: none;
+    padding: 16px;
+    margin-bottom: 64px;
+    cursor: pointer;
+    color: rgba(61, 90, 128, 0.5);
+}
+.iconInputShare{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
 .FooterCardDesc{
-    color: #A1A4AC;
-    margin-bottom: 30px;
+    color: #1C1F28;
     text-align: center;
+    font-size: 24px;
+    margin-bottom: 35px;
 }
 .footerGeneralInfo{
     height: 60%;
