@@ -8,6 +8,19 @@ import Subscripciones from '../src/components/home/Subscripciones';
 import Instrucciones from '../src/components/home/Instrucciones';
 import Contacto from '../src/components/home/Contacto';
 
+const FIREBASE =
+  `var firebaseConfig = {
+  apiKey: "AIzaSyAh1ZbRQB9fWZQz6kM7yJQtR_QnI3BnoSg",
+  authDomain: "otto-app-ab4ec.firebaseapp.com",
+  projectId: "otto-app-ab4ec",
+  storageBucket: "otto-app-ab4ec.appspot.com",
+  messagingSenderId: "439554359845",
+  appId: "1:439554359845:web:ff69395a0078ee1f1575cc",
+  measurementId: "G-TC3JYQC6SY"
+};
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();`
+
 const DATA_ESTRUCTURADA = {
   "@context": "https://schema.org",
   "@graph":
@@ -26,16 +39,16 @@ const DATA_ESTRUCTURADA = {
         "logo":
         {
           "@type": "ImageObject",
-          "@id": "https://www.axos.es/#logo",
+          "@id": "https://otto-app.com/#logo",
           "inLanguage": "es",
-          "url": "https://www.axos.es/wp-content/uploads//2020/02/LOGO_AXOS_MARGEN.png",
+          "url": "https://otto-app.com/wp-content/uploads//2020/02/LOGO_AXOS_MARGEN.png",
           "width": 3038,
           "height": 1654,
           "caption": "Otto app"
         },
         "image":
         {
-          "@id": "https://www.axos.es/#logo"
+          "@id": "https://otto-app.com/#logo"
         }
       },
       {
@@ -53,28 +66,28 @@ const DATA_ESTRUCTURADA = {
           [
             {
               "@type": "SearchAction",
-              "target": "https://www.axos.es/?s={search_term_string}",
+              "target": "https://otto-app.com/?s={search_term_string}",
               "query-input": "required name=search_term_string"
             }
           ]
       },
       {
         "@type": "WebPage",
-        "@id": "https://www.axos.es/#webpage",
-        "url": "https://www.axos.es/",
+        "@id": "https://otto-app.com/#webpage",
+        "url": "https://otto-app.com/",
         "name": "Toma el control de tus finanzas personales con otto",
         "isPartOf":
         {
-          "@id": "https://www.axos.es/#website"
+          "@id": "https://otto-app.com/#website"
         },
         "inLanguage": "es",
         "about":
         {
-          "@id": "https://www.axos.es/#organization"
+          "@id": "https://otto-app.com/#organization"
         },
         "datePublished": "2018-04-24T03:26:51+00:00",
         "dateModified": "2021-07-05T08:44:45+00:00",
-        "description": "Axos Soluciones, el Software ERP para pymes y empresas de Distribuci\u00f3n, Almacenes, Centrales de Compras y Franquicias.",
+        "description": "Toma el control de tus finanzas personales con otto",
         "potentialAction":
           [
             {
@@ -97,6 +110,9 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="amphtml" href="https://otto-app.com/amp" />
         <meta name="description" content="Toma el control de tus finanzas personales con otto"></meta>
+        <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+        <script dangerouslySetInnerHTML={{ __html: FIREBASE }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(DATA_ESTRUCTURADA) }} />
       </Head>
       <div>
