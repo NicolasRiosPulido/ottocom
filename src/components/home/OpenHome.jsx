@@ -31,7 +31,7 @@ const OpenHome = () => {
                     </div>
                 </div>
                 <div className={styles.OpenTextContainer}>
-                    <h2 >Toma el control de tus finanzas personales</h2>
+                    <h2 >Toma el control de tus finanzas personales test new domain</h2>
                     <p className={styles.OpenHomeTextDesc}>
                         Logra tus metas de ahorro, paga tus deudas y disfruta de una buena
                         salud financiera. Otto te ayuda a planificar tus finanzas de manera
