@@ -20,7 +20,7 @@ const Header = () => {
     }, [])
     return (
         <div className={`secction_body row_line ${styles.headreContainer}`}>
-            <Brand main={true} />
+            <Brand />
             <div className="row_aling">
                 <p>Preguntas Frecuentes</p>
                 {islogIn ?

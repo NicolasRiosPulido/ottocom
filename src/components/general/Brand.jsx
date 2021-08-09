@@ -2,23 +2,18 @@ import Image from 'next/image';
 import styles from '../../styles/General.module.css';
 
 const Brand = (props) => {
-    const { main = false } = props
+    const { logo = 1, text = 1 } = props
     return (
         <div className="row_aling">
             <Image
                 src={'/images/icon_withe.png'}
                 alt="iphon descripcion"
-                width={30}
-                height={30}
+                width={30 * logo}
+                height={30 * logo}
             />
-            {main ?
-                <h1 className={styles.brandTitle}>
-                    Otto
-                </h1> :
-                <p className={styles.brandTitle} style={{ fontSize: 30 }}>
-                    Otto
-                </p>
-            }
+            <p className={styles.brandTitle} style={{ fontSize: 30 * text }}>
+                Otto
+            </p>
         </div>
     )
 }

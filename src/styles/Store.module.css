@@ -1,0 +1,98 @@
+.store{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../assets/home/Mask.png");
+    background-size: 100% 65%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.text h1{
+   color: #FFF;
+   font-weight: 700;
+   font-size: 62px; 
+}
+
+.text h3{
+    color: #425466;
+    font-size: 18px;
+    line-height: 34px;
+}
+.images{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    justify-content: space-between;
+}
+.margincard{
+    margin-bottom: 24px;
+}
+.card{
+    width: 358px;
+    height: 210px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08), 0px 2px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 4px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.background{
+    background-image: url("../assets/home/store_img.png");
+    filter: drop-shadow(0px 16px 24px rgba(17, 37, 62, 0.16));
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+    height: 80%;
+    width: 535px;
+    position: fixed;
+    z-index: -1;
+    right: 0px;
+    border-top-left-radius: 12px;
+}
+
+@media  only screen and (max-width:750px) {
+    .text{
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .store{
+        background-size: 100% 70%;
+    }
+    .text h1{
+        font-size: 35px; 
+        padding: 44px 0px 32px;
+    }
+    .text h3{
+        font-size: 16px;
+        order: 1;
+        margin: 100px 20px 30px;
+    }
+    .resposivePhone{
+        background-image: url("../assets/home/store_img.png");
+        filter: drop-shadow(0px 16px 24px rgba(17, 37, 62, 0.16));
+        backdrop-filter: blur(20px);
+        width: 90vw;
+        height: 513px;
+        border-radius: 12px;
+        padding-top: 40px;
+    }
+    .btnContainer{
+        margin: 30px 0px;
+    }
+}
