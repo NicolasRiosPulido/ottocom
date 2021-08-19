@@ -1,3 +1,4 @@
+import React, { useRef, useState } from 'react';
 import {
     FacebookShareButton,
     WhatsappShareButton,
@@ -17,6 +18,13 @@ import Brand from '../general/Brand';
 import Social from '../general/Social';
 
 const Footer = () => {
+
+    const textCopi = useRef(null)
+
+    const handleCopi = () => {
+        textCopi.current.select();
+        document.execCommand('copy');
+    }
     return (
         <div className={styles.footerContainer}>
             <div className={styles.FooterCard}>
@@ -67,14 +75,17 @@ const Footer = () => {
                     </p>
                     <div className="p_r">
                         <input
-                            defaultValue="https://otto-app.com/"
+                            Value="https://otto-app.com/"
                             desable="true"
                             className={styles.inputShare}
+
+                            ref={textCopi}
                         />
                         <DocumentsOutline
                             color={'#5A38FD'}
                             height="25px"
                             width="25px"
+                            onClick={handleCopi}
                             className={styles.iconInputShare}
                         />
                     </div>

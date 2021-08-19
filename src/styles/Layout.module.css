@@ -76,13 +76,13 @@
     border: none;
     padding: 16px;
     margin-bottom: 64px;
-    cursor: pointer;
     color: rgba(61, 90, 128, 0.5);
 }
 .iconInputShare{
     position: absolute;
     right: 12px;
     top: 12px;
+    cursor: pointer;
 }
 .FooterCardDesc{
     color: #1C1F28;
@@ -121,5 +121,8 @@
     }
     .FooterTexContainer{
         width:  85%;
+    }
+    .inputShare{
+        width: 90vw;
     }
 }
