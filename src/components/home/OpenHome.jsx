@@ -3,6 +3,7 @@ import styles from '../../styles/Home.module.css';
 import { useMediaQuery } from 'react-responsive';
 
 import Btn from '../general/Btn';
+import Descargar from '../general/Descargar';
 import LinksApps from '../general/LinksApps';
 
 const OpenHome = () => {
@@ -39,7 +40,7 @@ const OpenHome = () => {
                    </p>
                     <LinksApps />
                     <span style={{ height: isMobile ? 78 : 40 }} />
-                    <Btn Title="Descagar" />
+                    <Descargar />
                 </div>
             </div>
         </div>

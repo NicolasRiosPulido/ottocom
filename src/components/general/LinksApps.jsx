@@ -1,10 +1,12 @@
 import Image from 'next/image';
 import styles from '../../styles/General.module.css';
 
+import { APP_STORE, GOOGLE_PLAY } from '../../lisbs/const';
+
 const LinksApps = () => {
     return (
         <div className={styles.LinksApps}>
-            <a href="https://apps.apple.com/co/app/otto/id1560048834?l=en" target="_blank">
+            <a href={APP_STORE} target="_blank">
                 <Image
                     src={'/images/home/appleStore.png'}
                     alt="iphon descripcion"
@@ -12,12 +14,14 @@ const LinksApps = () => {
                     height={40}
                 />
             </a>
-            <Image
-                src={'/images/home/googleStore.png'}
-                alt="iphon descripcion"
-                width={135}
-                height={40}
-            />
+            <a href={GOOGLE_PLAY} target="_blank">
+                <Image
+                    src={'/images/home/googleStore.png'}
+                    alt="iphon descripcion"
+                    width={135}
+                    height={40}
+                />
+            </a>
         </div>
     )
 }

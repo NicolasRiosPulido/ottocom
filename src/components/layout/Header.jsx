@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../../styles/Layout.module.css';
 import { Cookies } from 'react-cookie';
 
-import Btn from '../general/Btn';
+import Descargar from '../general/Descargar';
 import Brand from '../general/Brand';
 
 const cookies = new Cookies();
@@ -31,9 +31,7 @@ const Header = () => {
                         <p>Terminos y condiciones</p>
                     </Link>}
                 <Link href="/tienda">
-                    <Btn
-                        Title="Subscribete"
-                    />
+                    <Descargar />
                 </Link>
             </div>
         </div>

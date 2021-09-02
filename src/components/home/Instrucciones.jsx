@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { PieChartOutline, CalendarOutline, SwapHorizontalOutline, OptionsOutline } from 'react-ionicons';
 import styles from '../../styles/Home.module.css';
 
-import Btn from '../general/Btn';
+import Descargar from '../general/Descargar';
 
 const Instrucciones = () => {
     return (
@@ -77,7 +77,7 @@ const Instrucciones = () => {
                 </div>
             </div>
             <div className={`secction_body row_center ${styles.InstructionsBtnCon}`}>
-                <Btn Title="Descargar App" />
+                <Descargar />
             </div>
         </div>
     )
