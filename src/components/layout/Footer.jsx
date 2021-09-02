@@ -1,4 +1,5 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
+import Link from 'next/link';
 import {
     FacebookShareButton,
     WhatsappShareButton,
@@ -75,10 +76,9 @@ const Footer = () => {
                     </p>
                     <div className="p_r">
                         <input
-                            Value="https://otto-app.com/"
+                            defaultValue="https://otto-app.com/"
                             desable="true"
                             className={styles.inputShare}
-
                             ref={textCopi}
                         />
                         <DocumentsOutline
@@ -100,7 +100,9 @@ const Footer = () => {
                     <Brand />
                 </div>
                 <div className={`secction_body row`}>
-                    <p>Donec viverra purus a blandit Donec viverra purus a blandit</p>
+                    <Link href="/tyc">
+                        <p className="pointer">Terminos y condiciones</p>
+                    </Link>
                     <Social />
                 </div>
             </div>

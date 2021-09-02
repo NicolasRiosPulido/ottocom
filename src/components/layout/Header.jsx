@@ -27,8 +27,8 @@ const Header = () => {
                     <Link href="/perfil">
                         <p>Cerrar sesion</p>
                     </Link> :
-                    <Link href="/login">
-                        <p>Iniciar sesion</p>
+                    <Link href="/tyc">
+                        <p>Terminos y condiciones</p>
                     </Link>}
                 <Link href="/tienda">
                     <Btn

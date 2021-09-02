@@ -24,6 +24,12 @@
   text-align: center;
   margin-bottom: 10px;
 }
+.currencyTl{
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  margin: 20px 0px 30px;
+}
 /* OpenHome */
 .OpenContainer{ 
   height: 100vh;

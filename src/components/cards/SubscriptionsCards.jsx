@@ -68,7 +68,7 @@ export const SubscriptionsCardsB = () => {
     return (
         <div className={styles.planPremium}>
             <p className={styles.genera_title}>Plan Premium</p>
-            <p className={styles.currency}>Próximamente</p>
+            <p className={styles.currencyTl}>Gratis por tiempo limitado</p>
             <div className={styles.benefistContainer}>
                 {BENEFICIOS_PREMIUN.map((item, index) => (
                     <div className={`row_line_r ${styles.benefitLine}`} key={index}>
