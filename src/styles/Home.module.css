@@ -115,12 +115,14 @@
 }
 .ComoFuncionaImg{
   object-fit: contain;
+  height: 154px;
+  width: 100%;
 }
 .CFcardTitle{
   color: #1C1F28;
   font-size: 24px;
   text-align: center;
-  margin: 26px 0px;
+  margin-bottom: 26px;
 } 
 .CFcardDesc{
   color: #A1A4AC;
@@ -314,6 +316,10 @@ margin: 61px 0px 0px;
   .OpenHomeTextDesc{
     width: 100%;
   }
+  .OpenTextContainer h1{
+    width: 100%;
+  }
+  
   .OpenTextContainer h2{
     width: 100%;
   }
