@@ -80,6 +80,7 @@ const Contacto = () => {
                     alt="news letter"
                     width={326}
                     height={472}
+                    className="hidde"
                 />
             </div>
         </div>

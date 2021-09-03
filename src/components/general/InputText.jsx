@@ -12,7 +12,7 @@ export const InputText = ({
 }) => {
 
     return (
-        <div>
+        <div className={styles.inputResponsive}>
             <label className={styles.tituloInput}>{titulo}</label>
             <input
                 name={titulo}

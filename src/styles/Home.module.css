@@ -376,4 +376,9 @@ margin: 61px 0px 0px;
   .inputNewsLetter{
     margin-right: 0px;
   }
+
+  /* Newsletter */
+  .NewsLetter{
+    padding: 54px 16px;
+  }
 }
