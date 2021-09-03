@@ -47,14 +47,6 @@ const Footer = () => {
                             </FacebookShareCount>
                         </div>
                         <div>
-                            <WhatsappShareButton url={"https://peing.net/ja/"}>
-                                <WhatsappIcon
-                                    size={40}
-                                    round
-                                />
-                            </WhatsappShareButton>
-                        </div>
-                        <div>
                             <LinkedinShareButton url={"https://peing.net/ja/"}>
                                 <LinkedinIcon
                                     size={40}

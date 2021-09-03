@@ -74,11 +74,20 @@ h1, h2, h3, h4, h5, h6, p{
   display: flex;
   flex-direction: column;
 }
+.grow{
+  flex-grow: 1;
+}
+.ml-20{
+  margin-left: 20px;
+}
 .p_r{
   position: relative;
 }
 .pointer{
   cursor: pointer;
+}
+textarea:focus, input:focus{
+  outline: none;
 }
 /*Boton de facebook*/
 .kep-login-facebook.metro {

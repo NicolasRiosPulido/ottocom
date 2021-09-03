@@ -15,7 +15,7 @@
     margin-left: 14px;
 }
 
-/*Btn*/
+/*Btn*/ 
 
 .btnContainer{
     width: 200px;
@@ -39,4 +39,39 @@
      width: 310px;
      display: flex;
      justify-content: space-between;
+ }
+
+ /* Input */
+
+ .inputStile{
+    background: #EFF0F7;
+    border-radius: 16px;  
+    border: none;
+    height: 56px;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+ }
+ .inputStileE{
+    height: 56px;
+    width: 100%;
+    background: #FFF2F2;
+    border: 2px solid #FB6969;
+    border-radius: 16px;
+    padding: 12px;
+    font-size: 16px;
+ }
+ .tituloInput{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    color: #14142B;
+    letter-spacing: 0.75px;
+ }
+ .errorInput{
+    font-size: 14px;
+    line-height: 22px;
+    color: #FB6969;
+    letter-spacing: 0.25px;
+    margin-left: 8px;
  }

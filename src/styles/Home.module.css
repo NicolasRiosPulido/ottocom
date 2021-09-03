@@ -52,7 +52,6 @@
 }
 .cellPhoneA{
   position: absolute;
-  width: 100%;
   height: 90%;
   top: 0px;
   left: 35px;
@@ -60,7 +59,6 @@
 }
 .cellPhoneB{
   position: absolute;
-  width: 100%;
   height: 90%;
   top: 72px;
   left: -80px;
@@ -109,6 +107,7 @@
   width: 420px;
   height: 420px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   padding: 20px 25px;
   margin-top: 40px; 
@@ -203,6 +202,8 @@
 }
 .instructionPhine{
   margin: 0px 40px 50px;
+  width: 390px;
+  height: 720px;
 }
 
 /* Contacto */
@@ -232,11 +233,6 @@
   line-height: 19px;
   margin-bottom: 42px;
 }
-.NewsLetter label{
-color: #14142B;
-font-size: 14px;
-margin-bottom: 4px;
-}
 .inputNewsLetter{
   background-color: #EFF0F6;
   height: 56px;
@@ -244,9 +240,7 @@ margin-bottom: 4px;
   border-radius: 16px;
   border: none;
   margin-right: 18px;
-  color: #ACB5BD;
   font-size: 16px;
-  font-weight: 500;
   padding: 0px 16px;
 }
 .textAreNL{
@@ -255,6 +249,10 @@ margin-bottom: 4px;
   width: 100%;
   height: 192px;
   resize: none;
+}
+.succesMensaje{
+  color: #00966D;
+  margin-left: 12px;
 }
 /* Security */
 

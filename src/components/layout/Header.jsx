@@ -22,14 +22,9 @@ const Header = () => {
         <div className={`secction_body row_line ${styles.headreContainer}`}>
             <Brand />
             <div className="row_aling">
-                <p>Preguntas Frecuentes</p>
-                {islogIn ?
-                    <Link href="/perfil">
-                        <p>Cerrar sesion</p>
-                    </Link> :
-                    <Link href="/tyc">
-                        <p>Terminos y condiciones</p>
-                    </Link>}
+                <Link href="/tyc">
+                    <p>Terminos y condiciones</p>
+                </Link>
                 <Link href="/tienda">
                     <Descargar />
                 </Link>

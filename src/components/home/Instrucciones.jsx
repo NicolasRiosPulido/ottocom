@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { PieChartOutline, CalendarOutline, SwapHorizontalOutline, OptionsOutline } from 'react-ionicons';
 import styles from '../../styles/Home.module.css';
 
@@ -38,15 +37,11 @@ const Instrucciones = () => {
                         </p>
                     </div>
                 </div>
-                <div className={styles.instructionPhine}>
-                    <Image
-                        src={'/images/home/iPhoneC.png'}
-                        alt="iphon descripcion"
-                        quality={100}
-                        width={390}
-                        height={720}
-                    />
-                </div>
+                <img
+                    src={'https://avatars.otto-app.com/dotcom/home/iPhoneC.png'}
+                    alt="iphon descripcion"
+                    className={styles.instructionPhine}
+                />
                 <div>
                     <div className={styles.InstruccionesCard}>
                         <div className={`c_t ${styles.iconContainer}`}>

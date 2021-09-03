@@ -12,24 +12,16 @@ const OpenHome = () => {
         <div className={styles.OpenContainer}>
             <div className={styles.OpenBody}>
                 <div className={styles.homeImgContainer}>
-                    <div className={styles.cellPhoneA}>
-                        <Image
-                            src={'/images/home/iPhoneA.png'}
-                            alt="iphon descripcion"
-                            layout='fill'
-                            objectFit='contain'
-                            quality={100}
-                        />
-                    </div>
-                    <div className={styles.cellPhoneB}>
-                        <Image
-                            src={'/images/home/iPhoneB.png'}
-                            alt="iphon descripcion"
-                            layout='fill'
-                            objectFit='contain'
-                            quality={100}
-                        />
-                    </div>
+                    <img
+                        src={'/images/home/iPhoneA.png'}
+                        alt="iphon descripcion"
+                        className={styles.cellPhoneA}
+                    />
+                    <img
+                        src={'https://avatars.otto-app.com/dotcom/home/iPhoneB.png'}
+                        alt="iphon descripcion"
+                        className={styles.cellPhoneB}
+                    />
                 </div>
                 <div className={styles.OpenTextContainer}>
                     <h1 >Toma el control de tus finanzas personales</h1>

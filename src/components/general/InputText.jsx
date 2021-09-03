@@ -1,3 +1,5 @@
+import { Warning } from 'react-ionicons'
+
 import styles from '../../styles/General.module.css';
 
 export const InputText = ({
@@ -10,8 +12,8 @@ export const InputText = ({
 }) => {
 
     return (
-        <div className={styles.container}>
-            <label className={styles.titulo}>{titulo}</label>
+        <div>
+            <label className={styles.tituloInput}>{titulo}</label>
             <input
                 name={titulo}
                 type={tipo}
@@ -19,13 +21,19 @@ export const InputText = ({
                 error={mensaje}
                 onChange={useValor}
                 onKeyPress={usekeypress}
-                className={styles.inputStile}
+                className={mensaje ? styles.inputStileE : styles.inputStile}
             />
-            {mensaje ? (
-                <div>
-                    <p>{mensaje}</p>
+            {mensaje &&
+                <div className="row_aling">
+                    <Warning
+                        color={'#FB6969'}
+                        title={''}
+                        height="14px"
+                        width="14px"
+                    />
+                    <p className={styles.errorInput}>{mensaje}</p>
                 </div>
-            ) : null}
+            }
         </div>
     );
 };

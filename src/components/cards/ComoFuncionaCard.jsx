@@ -53,7 +53,7 @@ export const ComoFuncionaCardD = () => {
     return (
         <div className={styles.ComoFuncionaCard}>
             <img
-                src={'https://avatars.otto-app.com/dotcom/home/CFIlustrationC.png'}
+                src={'https://avatars.otto-app.com/dotcom/home/CFIlustrationA.png'}
                 alt="Iluestarcion A"
                 className={styles.ComoFuncionaImg}
             />
