@@ -72,7 +72,7 @@ const Contacto = () => {
                     <textarea ref={body} className={`${styles.inputNewsLetter} ${styles.textAreNL}`} type="text" rows="4" cols="50" />
                     {enviado && <p className={styles.succesMensaje}>¡Mensaje enviado!</p>}
                     <div className="row_right">
-                        <Btn cargando={cargando} onClick={submit} />
+                        <Btn Title="Enviar" cargando={cargando} onClick={submit} />
                     </div>
                 </div>
                 <img
