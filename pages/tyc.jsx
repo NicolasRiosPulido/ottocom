@@ -1,9 +1,17 @@
+import { Document } from "react-pdf";
+import styles from '../src/styles/tyc.module.css';
+
+const TYC = "https://doc-archivos.s3.us-west-2.amazonaws.com/tyc_otto.pdf"
+
 const tyc = () => {
     return (
-        <div>
-            <h1>Terminos y condiciones de uso</h1>
-        </div>
+        <iframe
+            src={TYC}
+            frameborder="0"
+            className={styles.tycondiciones}
+        >
+        </iframe>
     )
 }
 
-export default tyc
+export default tyc;
