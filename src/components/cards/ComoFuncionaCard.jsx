@@ -22,7 +22,7 @@ export const ComoFuncionaCardB = () => {
         <div className={styles.ComoFuncionaCard}>
             <img
                 src={'https://avatars.otto-app.com/dotcom/home/CFIlustrationB.png'}
-                alt="Iluestarcion A"
+                alt="Iluestarcion B"
                 className={styles.ComoFuncionaImg}
             />
             <p className={styles.CFcardTitle}>Controla tu presupuesto</p>
@@ -38,7 +38,7 @@ export const ComoFuncionaCardC = () => {
         <div className={styles.ComoFuncionaCard}>
             <img
                 src={'https://avatars.otto-app.com/dotcom/home/CFIlustrationC.png'}
-                alt="Iluestarcion A"
+                alt="Iluestarcion c"
                 className={styles.ComoFuncionaImg}
             />
             <p className={styles.CFcardTitle}>Cumple tus metas </p>
@@ -54,7 +54,7 @@ export const ComoFuncionaCardD = () => {
         <div className={styles.ComoFuncionaCard}>
             <img
                 src={'https://avatars.otto-app.com/dotcom/home/CFIlustrationA.png'}
-                alt="Iluestarcion A"
+                alt="Iluestarcion D"
                 className={styles.ComoFuncionaImg}
             />
             <p className={styles.CFcardTitle}>Mejora tu salud financiera </p>
