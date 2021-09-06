@@ -31,10 +31,10 @@ const DATA_ESTRUCTURADA = {
         "name": "Otto APP",
         "url": "https://otto-app.com/",
         "sameAs": [
-          "https://www.facebook.com/axos.soluciones",
-          "https://www.linkedin.com/in/otto-app-co/?originalSubdomain=co",
-          "https://www.youtube.com/channel/UCetLnaI0bwQnDe4Rdl0xrtg?view_as=subscriber",
-          "https://twitter.com/Axos_Soluciones"
+          "https://www.instagram.com/otto.app.co/",
+          "https://www.facebook.com/OttoFintech",
+          "https://www.linkedin.com/company/otto-app",
+          "https://twitter.com/otto_app"
         ],
         "logo":
         {
@@ -53,8 +53,8 @@ const DATA_ESTRUCTURADA = {
       },
       {
         "@type": "WebSite",
-        "@id": "https://otto.com/#website",
-        "url": "https://otto.com/",
+        "@id": "https://otto-app.com/#website",
+        "url": "https://otto-app.com",
         "name": "Otto app finanzas personal",
         "inLanguage": "es",
         "description": "Toma el control de tus finanzas personales con otto",
@@ -94,7 +94,7 @@ const DATA_ESTRUCTURADA = {
               "@type": "ReadAction",
               "target":
                 [
-                  "https://otto.com/"
+                  "https://otto-app.com/"
                 ]
             }
           ]

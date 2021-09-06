@@ -1,35 +1,31 @@
-import Image from 'next/image';
 import { useMediaQuery } from 'react-responsive';
+import { SocialIcon } from 'react-social-icons';
 
 const Social = () => {
     const isMobile = useMediaQuery({ query: '(min-device-width: 700px)' })
     return (
         <div className="row_r" style={{ width: 140, marginTop: isMobile ? 0 : 20 }}>
-            <Image
-                src={'/images/social/facebook-logo-button.png'}
-                alt="iphon descripcion"
-                width={20}
-                height={20}
+            <SocialIcon
+                url="https://www.facebook.com/OttoFintech"
+                bgColor="#FFF"
+                style={{ height: 25, width: 25 }}
             />
-            <Image
-                src={'/images/social/youtube.png'}
-                alt="iphon descripcion"
-                width={20}
-                height={20}
+            <SocialIcon
+                url="https://twitter.com/otto_app"
+                bgColor="#FFF"
+                style={{ height: 25, width: 25 }}
             />
-            <Image
-                src={'/images/social/google-plus.png'}
-                alt="iphon descripcion"
-                width={20}
-                height={20}
+            <SocialIcon
+                url="https://www.instagram.com/otto.app.co/"
+                bgColor="#FFF"
+                style={{ height: 25, width: 25 }}
             />
-            <Image
-                src={'/images/social/twitter.png'}
-                alt="iphon descripcion"
-                width={20}
-                height={20}
+            <SocialIcon
+                url="https://www.linkedin.com/company/otto-app"
+                bgColor="#FFF"
+                style={{ height: 25, width: 25 }}
             />
-        </div>
+        </div >
     )
 }
 

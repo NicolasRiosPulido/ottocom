@@ -2,12 +2,10 @@ import React, { useRef } from 'react';
 import Link from 'next/link';
 import {
     FacebookShareButton,
-    WhatsappShareButton,
     LinkedinShareButton,
     EmailShareButton,
     FacebookShareCount,
     FacebookIcon,
-    WhatsappIcon,
     LinkedinIcon,
     EmailIcon
 } from 'react-share';
@@ -36,18 +34,18 @@ const Footer = () => {
                     </p>
                     <div className={styles.socialCOntainer}>
                         <div>
-                            <FacebookShareButton url={"https://peing.net/ja/"}>
+                            <FacebookShareButton url={"https://www.facebook.com/OttoFintech"}>
                                 <FacebookIcon
                                     size={40}
                                     round
                                 />
                             </FacebookShareButton>
-                            <FacebookShareCount url={"https://peing.net/ja/"}>
+                            <FacebookShareCount url={"https://www.facebook.com/OttoFintech"}>
                                 {shareCount => <span className="myShareCountWrapper">{shareCount}</span>}
                             </FacebookShareCount>
                         </div>
                         <div>
-                            <LinkedinShareButton url={"https://peing.net/ja/"}>
+                            <LinkedinShareButton url={"https://www.linkedin.com/company/otto-app"}>
                                 <LinkedinIcon
                                     size={40}
                                     round

@@ -96,4 +96,4 @@ const amp = () => {
     )
 }
 
-export default amp
+export default amp;
