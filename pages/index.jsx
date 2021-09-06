@@ -41,7 +41,7 @@ const DATA_ESTRUCTURADA = {
           "@type": "ImageObject",
           "@id": "https://otto-app.com/#logo",
           "inLanguage": "es",
-          "url": "https://otto-app.com/wp-content/uploads//2020/02/LOGO_AXOS_MARGEN.png",
+          "url": "https://doc-archivos.s3.us-west-2.amazonaws.com/Otto_brand_app.png",
           "width": 3038,
           "height": 1654,
           "caption": "Otto app"
