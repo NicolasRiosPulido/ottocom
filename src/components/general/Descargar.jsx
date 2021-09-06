@@ -13,6 +13,7 @@ const Descargar = () => {
                 className={styles.btnContainer}
                 href={APP_STORE}
                 target="_blank"
+                rel="noreferrer"
             >
                 <p>Descargar</p>
             </a>
@@ -24,6 +25,7 @@ const Descargar = () => {
                 className={styles.btnContainer}
                 href={GOOGLE_PLAY}
                 target="_blank"
+                rel="noreferrer"
             >
                 <p>Descargar</p>
             </a>
