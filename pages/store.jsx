@@ -12,7 +12,7 @@ const store = () => {
     return (
         <div className={styles.store}>
             <Head>
-                <title>Otto App</title>
+                <title>Otto App Tienda</title>
                 <link rel="canonical" href="https://otto-app.com/store"></link>
                 <meta name="description" content="Disfruta otto gratis por 3 meses"></meta>
             </Head>

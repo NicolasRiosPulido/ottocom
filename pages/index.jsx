@@ -110,6 +110,17 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="amphtml" href="https://otto-app.com/amp" />
         <meta name="description" content="Toma el control de tus finanzas personales con otto"></meta>
+        <meta name="copyright" content="otto-app" />
+        <meta name="language" content="ES" />
+        <meta name="revised" content="Sunday, July 18th, 2021, 5:15 pm" />
+        <meta name="abstract" content="Logra tus metas de ahorro, paga tus deudas y disfruta de una buena salud financiera. Otto te ayuda a planificar tus finanzas de manera inteligente, automatica y personalizada." />
+        <meta name="topic" content="Finanzas personales" />
+        <meta name="Classification" content="Business" />
+        <meta name="author" content="name, dev@otto-app.com" />
+        <meta name="designer" content="Juan Pablo Amaya" />
+        <meta name="reply-to" content="contacto@otto-app.com" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="chrome=1" />
         <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
         <script dangerouslySetInnerHTML={{ __html: FIREBASE }} />
