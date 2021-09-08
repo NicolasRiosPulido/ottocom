@@ -8,6 +8,10 @@ import Subscripciones from '../src/components/home/Subscripciones';
 import Instrucciones from '../src/components/home/Instrucciones';
 import Contacto from '../src/components/home/Contacto';
 
+const REDES = `
+function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"59f0f0f92d0c4f959329c2341757a74"})});
+`
+
 const FIREBASE =
   `var firebaseConfig = {
   apiKey: "AIzaSyAh1ZbRQB9fWZQz6kM7yJQtR_QnI3BnoSg",
@@ -124,6 +128,7 @@ export default function Home(props) {
         <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
         <script dangerouslySetInnerHTML={{ __html: FIREBASE }} />
+        <script dangerouslySetInnerHTML={{ __html: REDES }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(DATA_ESTRUCTURADA) }} />
       </Head>
       <div>
