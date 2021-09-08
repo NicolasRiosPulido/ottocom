@@ -6,22 +6,22 @@ const Social = () => {
     return (
         <div className="row_r" style={{ width: 140, marginTop: isMobile ? 0 : 20 }}>
             <SocialIcon
-                url="https://www.facebook.com/OttoFintech"
+                url="https://web.facebook.com/OttoBanking"
                 bgColor="#FFF"
                 style={{ height: 25, width: 25 }}
             />
             <SocialIcon
-                url="https://twitter.com/otto_app"
+                url="https://twitter.com/ottobanking"
                 bgColor="#FFF"
                 style={{ height: 25, width: 25 }}
             />
             <SocialIcon
-                url="https://www.instagram.com/otto.app.co/"
+                url="https://www.instagram.com/ottobanking"
                 bgColor="#FFF"
                 style={{ height: 25, width: 25 }}
             />
             <SocialIcon
-                url="https://www.linkedin.com/company/otto-app"
+                url="https://www.linkedin.com/company/ottobanking"
                 bgColor="#FFF"
                 style={{ height: 25, width: 25 }}
             />
