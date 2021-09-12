@@ -117,7 +117,8 @@ export default function Home(props) {
         <meta name="copyright" content="otto-app" />
         <meta name="language" content="ES" />
         <meta name="revised" content="Sunday, July 18th, 2021, 5:15 pm" />
-        <meta name="abstract" content="Logra tus metas de ahorro, paga tus deudas y disfruta de una buena salud financiera. Otto te ayuda a planificar tus finanzas de manera inteligente, automatica y personalizada." />
+        <meta name="abstract" content="Otto te ayuda a planificar tus finanzas de manera inteligente, automática y personalizada. 
+Logra tus metas de ahorro, paga tus deudas y disfruta de salud financiera." />
         <meta name="topic" content="Finanzas personales" />
         <meta name="Classification" content="Business" />
         <meta name="author" content="name, dev@otto-app.com" />

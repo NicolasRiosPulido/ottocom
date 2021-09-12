@@ -7,7 +7,7 @@ const BENEFICIOS_BASICO = [
         valid: true
     },
     {
-        value: 'Clasificacion de transacciones por cateoria',
+        value: 'Clasificación de transacciones por cateoria',
         valid: true
     },
     {
@@ -19,21 +19,21 @@ const BENEFICIOS_BASICO = [
         valid: true
     },
     {
-        value: 'Conexion automatica a cuentas bancarias',
+        value: 'Conexión automática a cuentas bancarias',
         valid: false
     },
     {
-        value: 'Categorizacion inteligente de transacciones',
+        value: 'Categorización inteligente de transacciones',
         valid: false
     },
 ]
 const BENEFICIOS_PREMIUN = [
     'Registro de transacciones',
-    'Clasificacion de transacciones por cateoria',
+    'Clasificación de transacciones por categoría',
     'Metas de ahorro y deuda',
     'Consejos para mejorar tu salud financiera',
-    'Conexion automatica a cuentas bancarias',
-    'Categorizacion inteligente de transacciones'
+    'Conexión automática a cuentas bancarias',
+    'Categorización inteligente de transacciones'
 ]
 
 export const SubscriptionsCardsA = () => {
@@ -67,7 +67,7 @@ export const SubscriptionsCardsA = () => {
 export const SubscriptionsCardsB = () => {
     return (
         <div className={styles.planPremium}>
-            <p className={styles.genera_title}>Plan Premium</p>
+            <p className={styles.genera_title}>Plan básico</p>
             <p className={styles.currencyTl}>Gratis por tiempo limitado</p>
             <div className={styles.benefistContainer}>
                 {BENEFICIOS_PREMIUN.map((item, index) => (

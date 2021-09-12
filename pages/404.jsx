@@ -1,14 +1,13 @@
 import Link from 'next/link';
 
 import styles from '../src/styles/Error.module.css';
-import Image from 'next/image';
 
 const Custom404 = () => {
     return (
         <div className={styles.error}>
             <div className="secction_body row_aling">
-                <Image
-                    src={'/images/icon_color.png'}
+                <img
+                    src={'https://avatars.otto-app.com/dotcom/icon_color.png'}
                     alt="iphon descripcion"
                     width={30}
                     height={30}
@@ -16,8 +15,8 @@ const Custom404 = () => {
                 <p className={styles.title}>Otto</p>
             </div>
             <div className={styles.body}>
-                <Image
-                    src={'/images/error/error_ilustration.png'}
+                <img
+                    src={'https://avatars.otto-app.com/dotcom/error/error_ilustration.png'}
                     alt="Iluestarcion A"
                     width={705}
                     height={454}

@@ -11,7 +11,7 @@ export const ComoFuncionaCardA = () => {
             />
             <p className={styles.CFcardTitle}>Monitoreo de gastos</p>
             <p className={styles.CFcardDesc}>
-                Registra de forma centralizada tus transacciones por categorias de manera manual o automatica.
+                Registra en un solo lugar tus transacciones y clasifícalas en categorías de manera manual o automática.
             </p>
         </div>
     )
@@ -59,7 +59,7 @@ export const ComoFuncionaCardD = () => {
             />
             <p className={styles.CFcardTitle}>Mejora tu salud financiera </p>
             <p className={styles.CFcardDesc}>
-                Recibe asesoria que te permita disfurtar del presente y vivir tranquilo sobre tu futuro financiero
+                Recibe asesoría que te permita disfurtar del presente y vivir tranquilo sobre tu futuro financiero
         </p>
         </div>
     )

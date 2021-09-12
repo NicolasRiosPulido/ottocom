@@ -66,7 +66,7 @@ const Instrucciones = () => {
                         </div>
                         <p >Filtra tus movimientos</p>
                         <p>
-                            Filtros que te ayudan a ver tus transacciones por mes, tipo y cateogria
+                            Filtros que te ayudan a ver tus transacciones por mes, tipo y categoría.
                         </p>
                     </div>
                 </div>

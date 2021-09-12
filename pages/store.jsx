@@ -24,7 +24,8 @@ const store = () => {
                     </h1>
                     <LinksApps />
                     <h3>
-                        Logra tus metas de ahorro, paga tus deudas y disfruta de una buena salud financiera. Otto te ayuda a planificar tus finanzas de manera inteligente, automatica y personalizada.
+                        Otto te ayuda a planificar tus finanzas de manera inteligente, automática y personalizada.
+                        Logra tus metas de ahorro, paga tus deudas y disfruta de salud financiera.
                     </h3>
                     <div className={styles.btnContainer}>
                         <Btn
