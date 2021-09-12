@@ -9,7 +9,7 @@ const amp = () => {
             style={
                 {
                     backgroundColor: '#9444FB',
-                    minHeight: '100vh'
+                    padding: '20px 10px'
                 }
             }
         >
@@ -37,7 +37,7 @@ const amp = () => {
                         textAlign: 'center',
                         fontSize: 40,
                         fontFamily: 'Roboto',
-                        margin: '20px'
+                        margin: '25px 10px'
                     }
                 }
             >
@@ -51,7 +51,7 @@ const amp = () => {
                         fontFamily: 'Roboto',
                         fontSize: 16,
                         lineHeight: 2,
-                        margin: '0 20px'
+                        margin: '0 10px'
                     }
                 }
             >
