@@ -7,11 +7,11 @@ import { APP_STORE, GOOGLE_PLAY } from '../../lisbs/const';
 
 const Descargar = () => {
 
-    if (rdd.isMacOs || rdd.isIOS) {
+    if (rdd.isAndroid || rdd.isIOS) {
         return (
             <a
                 className={styles.btnContainer}
-                href={APP_STORE}
+                href={GOOGLE_PLAY}
                 target="_blank"
                 rel="noreferrer"
             >
@@ -23,7 +23,7 @@ const Descargar = () => {
         return (
             <a
                 className={styles.btnContainer}
-                href={GOOGLE_PLAY}
+                href={APP_STORE}
                 target="_blank"
                 rel="noreferrer"
             >

@@ -1,11 +1,10 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
 import styles from '../src/styles/Store.module.css';
 
 import Brand from '../src/components/general/Brand';
 import LinksApps from '../src/components/general/LinksApps';
-import Btn from '../src/components/general/Btn';
+import Descargar from '../src/components/general/Descargar';
 
 const store = () => {
     const isMobile = useMediaQuery({ query: '(min-device-width: 750px)' })
@@ -28,12 +27,7 @@ const store = () => {
                         Logra tus metas de ahorro, paga tus deudas y disfruta de salud financiera.
                     </h3>
                     <div className={styles.btnContainer}>
-                        <Link href="/app">
-                            <Btn
-                                Title='Comenzar'
-                                onClick={() => { }}
-                            />
-                        </Link>
+                        <Descargar />
                     </div>
                     {!isMobile &&
                         <div className={styles.resposivePhone}>
