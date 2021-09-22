@@ -1,13 +1,20 @@
+import React, { useEffect } from 'react';
 import * as rdd from 'react-device-detect';
 
+import { APP_STORE, GOOGLE_PLAY } from '../src/lisbs/const';
+
 const app = () => {
-    const { osName } = rdd.deviceDetect()
-    console.log(rdd.isAndroid)
+
+    useEffect(() => {
+        const urltipe = rdd.isAndroid ? GOOGLE_PLAY : APP_STORE;
+        window.location.href = urltipe
+    }, [])
+
     return (
         <div>
-            dispositivo {osName} {rdd.isAndroid && ' es un android'}
+
         </div>
     )
 }
 
-export default app
+export default app;
