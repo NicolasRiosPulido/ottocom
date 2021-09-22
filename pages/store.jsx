@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import Head from 'next/head';
+import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
 import styles from '../src/styles/Store.module.css';
 
@@ -28,37 +28,37 @@ const store = () => {
                         Logra tus metas de ahorro, paga tus deudas y disfruta de salud financiera.
                     </h3>
                     <div className={styles.btnContainer}>
-                        <Btn
-                            Title='Comenzar'
-                            onClick={() => alert('strores')}
-                        />
+                        <Link href="/app">
+                            <Btn
+                                Title='Comenzar'
+                                onClick={() => { }}
+                            />
+                        </Link>
                     </div>
                     {!isMobile &&
                         <div className={styles.resposivePhone}>
-                            <Image
-                                src={'/images/home/iPhoneD.png'}
+                            <img
+                                src={'https://avatars.otto-app.com/dotcom/home/iPhoneD.png'}
                                 alt="iphon descripcion"
                                 width={266}
                                 height={533}
-                                quality={100}
                             />
                         </div>
                     }
                 </div>
                 {isMobile &&
                     <div className={styles.images}>
-                        <Image
-                            src={'/images/home/iPhoneD.png'}
+                        <img
+                            src={'https://avatars.otto-app.com/dotcom/home/iPhoneD.png'}
                             alt="iphon descripcion"
                             width={266}
                             height={533}
-                            quality={100}
                         />
                         <div className={styles.background} />
                         <div className={styles.cardContainer}>
                             <div className={`${styles.card} ${styles.margincard}`}>
-                                <Image
-                                    src={'/images/home/CFIlustrationA.png'}
+                                <img
+                                    src={'https://avatars.otto-app.com/dotcom/home/CFIlustrationA.png'}
                                     alt="iphon descripcion"
                                     width={195}
                                     height={140}
@@ -66,8 +66,8 @@ const store = () => {
                                 />
                             </div>
                             <div className={styles.card}>
-                                <Image
-                                    src={'/images/home/CFIlustrationC.png'}
+                                <img
+                                    src={'https://avatars.otto-app.com/dotcom/home/CFIlustrationC.png'}
                                     alt="iphon descripcion"
                                     width={195}
                                     height={140}
