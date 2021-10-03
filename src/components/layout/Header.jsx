@@ -22,7 +22,7 @@ const Header = () => {
         <div className={`secction_body row_line ${styles.headreContainer}`}>
             <Brand />
             <div className="row_aling">
-                <Link href="/tyc">
+                <Link href="https://avatars.otto-app.com/doc/tyc-ottoapp-20210811.pdf">
                     <p>Terminos y condiciones</p>
                 </Link>
                 <Link href="/tienda">
