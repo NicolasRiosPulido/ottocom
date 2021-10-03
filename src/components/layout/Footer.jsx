@@ -90,7 +90,7 @@ const Footer = () => {
                     <Brand />
                 </div>
                 <div className={`secction_body row`}>
-                    <Link href="https://avatars.otto-app.com/doc/tyc-ottoapp-20210811.pdf">
+                    <Link href="/tyc">
                         <p className="pointer">Terminos y condiciones</p>
                     </Link>
                     <Social />
