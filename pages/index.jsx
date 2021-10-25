@@ -109,13 +109,19 @@ export default function Home(props) {
   return (
     <Layout>
       <Head>
-        <title>Otto App</title>
+        <title>Otto App - Finanzas personales</title>
+        <meta name="description" content="Toma el control de tus finanzas personales con otto"></meta>
         <link rel="canonical" href="https://otto-app.com/"></link>
         <link rel="icon" href="/favicon.ico" />
         <link rel="amphtml" href="https://otto-app.com/amp" />
-        <meta name="description" content="Toma el control de tus finanzas personales con otto"></meta>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></meta>
+        <meta name="viewport" content="width=device-width"></meta>
+        <meta name="geo.placename" content="Colombia"></meta>
+        <meta name="geo.position" content="4.570868;-74.297333"></meta>
+        <meta name="geo.region" content="CO"></meta>
+        <meta name="ICBM" content="4.570868, -74.297333"></meta>
         <meta name="copyright" content="otto-app" />
-        <meta name="language" content="ES" />
+        <meta name="language" content="spanish" />
         <meta name="revised" content="Sunday, July 18th, 2021, 5:15 pm" />
         <meta name="abstract" content="Otto te ayuda a planificar tus finanzas de manera inteligente, automática y personalizada. 
 Logra tus metas de ahorro, paga tus deudas y disfruta de salud financiera." />
@@ -124,8 +130,16 @@ Logra tus metas de ahorro, paga tus deudas y disfruta de salud financiera." />
         <meta name="author" content="name, dev@otto-app.com" />
         <meta name="designer" content="Juan Pablo Amaya" />
         <meta name="reply-to" content="contacto@otto-app.com" />
+        <meta property="og:type" content="website"></meta>
+        <meta property="og:title" content="Otto App"></meta>
+        <meta property="og:description" content="Otto te ayuda a planificar tus finanzas de manera inteligente, automática y personalizada. 
+Logra tus metas de ahorro, paga tus deudas y disfruta de salud financiera." ></meta>
+        <meta property="og:url" content="https://otto-app.com/"></meta>
+        <meta property="og:image" content="/images/icon_color.png"></meta>
+        <meta property="og:site_name" content="Otto App"></meta>
+        <meta property="og:locale" content="es_CO"></meta>
+        <meta property="og:locale:alternate" content="es_CO"></meta>
         <meta http-equiv="Cache-Control" content="no-cache" />
-        <meta http-equiv="X-UA-Compatible" content="chrome=1" />
         <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
         <script dangerouslySetInnerHTML={{ __html: FIREBASE }} />
